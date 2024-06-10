@@ -1,7 +1,7 @@
 Package: AQRdata
 Type: Package
 Title: Datasets from the AQR education wedsite 
-Version: 0.0.1
+Version: 0.1.0
 Authors@R: c(
     person("Justin M.", "Shea", role = c("aut", "cre"), email = "jshea@roosevelt.edu"),
     person("Corties X.", "Draper", role = c("aut"), email = "Cortiesxdraper@gmail.com")
