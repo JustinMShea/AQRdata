@@ -1,0 +1,17 @@
+Package: AQRdata
+Type: Package
+Title: Datasets from the AQR education wedsite 
+Version: 0.0.1
+Authors@R: c(
+    person("Justin M.", "Shea", role = c("aut", "cre"), email = "jshea@roosevelt.edu"),
+    person("Corties X.", "Draper", role = c("aut", "cre"), email = "Cortiesxdraper@gmail.com") 
+Description: https://www.aqr.com/Insights/Datasets Will fill out more 
+Depends: R (>= 3.5.0)
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Suggests: knitr, rmarkdown, tinytest
+VignetteBuilder: knitr
+LazyDataCompression: xz
+URL: https://justinmshea.github.io/AQRdata/
+BugReports: https://github.com/JustinMShea/AQRdata/issues/
