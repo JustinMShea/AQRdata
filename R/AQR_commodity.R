@@ -33,11 +33,11 @@
 #' 
 #' @docType data
 #'
-#' @usage data('wage1')
+#' @usage data('AQR_commodity')
 #'
-#' @format A data.frame with 526 observations on 24 variables:
+#' @format A data.frame with 1766 observations on 12 variables:
 #' \itemize{
-#'  \item \strong{Date:} Date, monthly periodicity. Formated in as a Date object in %Y-%m-%d format.
+#'  \item \strong{Date:} Date, monthly periodicity. Formatted in as a Date object in %Y-%m-%d format.
 #'  \item \strong{ExcessReturn.Equal:} Returns, numerical. Abbreviated from 
 #'  original name of "Excess return of equal-weight commodities portfolio"
 #'  \item \strong{ExcessSpot.Return.Equal:} Returns, numerical. Abbreviated from 
