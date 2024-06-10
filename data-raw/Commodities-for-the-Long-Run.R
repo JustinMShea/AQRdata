@@ -10,19 +10,19 @@ AQR_commodity_index_file <- "https://images.aqr.com/-/media/AQR/Documents/Insigh
     download.file(AQR_commodity_index_file, destfile = "sandbox/AQR_commodity.xlsx")
 
 library(openxlsx)
-AQR_comm_index <- read.xlsx(AQR_commodity_index_file, sheet = 1, startRow = 10)
+AQR_commodity <- read.xlsx(AQR_commodity_index_file, sheet = 1, startRow = 10)
 
 
-colnames(AQR_comm_index) <- c("Date", "ExcessReturn.Equal",
+colnames(AQR_commodity) <- c("Date", "ExcessReturn.Equal",
                "ExcessSpot.Return.Equal", "InterestCarry.Equal",
                "SpotReturn.Equal", "Carry.Equal", "ExcessReturn.longshort",
                "ExcessSpot.Return.longshort","InterestCarry.longshort",
                "Aggregate.forwardcurve","State.forwardcurve", "State.Inflation")
  # Format
-AQR_comm_index$Date <- as.Date(AQR_comm_index $Date, format = "%m/%d/%Y")
-AQR_comm_index$State.forwardcurve <- as.factor(AQR_comm_index $State.forwardcurve)
-AQR_comm_index$State.Inflation <- as.factor(AQR_comm_index$State.Inflation)
+AQR_commodity$Date <- as.Date(AQR_commodity$Date, format = "%Y-%m-%d")
+AQR_commodity$State.forwardcurve <- as.factor(AQR_commodity $State.forwardcurve)
+AQR_commodity$State.Inflation <- as.factor(AQR_commodity$State.Inflation)
 
  # Save to sandbox if needed
-save(AQR_comm_index, file = paste0("sandbox/AQR_comm_index.RData"), compress = "xz", compression_level = 9)
+save(AQR_commodity, file = paste0("data/AQR_commodity.RData"), compress = "xz", compression_level = 9)
 
