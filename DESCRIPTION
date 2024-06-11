@@ -1,12 +1,17 @@
 Package: AQRdata
 Type: Package
-Title: Datasets from the AQR education wedsite 
-Version: 0.1.0
+Title: Data and Return series from the AQR Capital Management, LLC Data Library 
+Version: 0.1.1
 Authors@R: c(
     person("Justin M.", "Shea", role = c("aut", "cre"), email = "jshea@roosevelt.edu"),
     person("Corties X.", "Draper", role = c("aut"), email = "Cortiesxdraper@gmail.com")
     )
-Description: https://www.aqr.com/Insights/Datasets Will fill out more 
+Description: This R package provides access to return series from hypothetical 
+  portfolios in academic articles by AQR researchers. Datasets include long-only 
+  excess returns and long/short factor premia, with varying granularity and both 
+  monthly and daily returns. Each dataset links to a specific paper, reflecting 
+  returns to portfolios as described, not live returns or backtests of AQR 
+  portfolios. Users should cite “AQR Capital Management, LLC.”
 Depends: R (>= 3.5.0)
 License: GPL-3
 Encoding: UTF-8
