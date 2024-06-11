@@ -3,7 +3,7 @@ Type: Package
 Title: Data and Return series from the AQR Capital Management, LLC Data Library 
 Version: 0.1.1
 Authors@R: c(
-    person("Justin M.", "Shea", role = c("aut", "cre"), email = "jshea@roosevelt.edu"),
+    person("Justin M.", "Shea", role = c("aut", "cre"), email = "justin.shea@gmail.com"),
     person("Corties X.", "Draper", role = c("aut"), email = "Cortiesxdraper@gmail.com")
     )
 Description: This R package provides access to return series from hypothetical 
