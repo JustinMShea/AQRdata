@@ -33,96 +33,84 @@
 #'  \item \strong{VAL.EVR:} Excess returns of a ranked-weighted value factor, VAL, EVERYWHERE
 #'  original name of "MOM"
 #'  \item \strong{ExcessSpot.Return.Equal:} Rank-weighted momentum factor, MOM, EVERYWHERE
-#'
 #'  original name of "VAL^SS"
 #'  \item \strong{VALFactorSS:} Excess returns of a ranked-weighted value factor, VAL, ALL EQUITIES, SS
-#'
-#'
-#'  original name of "Interest rate adjusted carry of equal-weight commodities portfolio"
-#'  \item \strong{SpotReturn.Equal} Return, numerical. Abbreviated from
-#'  original name of "Spot return of equal-weight commodities portfolio"
-#'  \item \strong{Carry.Equal:} Return, numerical. Abbreviated from
-#'  original name of "Carry of equal-weight commodities portfolio"
-#'  \item \strong{ExcessReturn.longshort:} Return, numerical. Abbreviated from
-#'  original name of "Excess return of long/short commodities portfolio"
-#'  \item \strong{ExcessSpot.Return.longshort:} Return, numerical. Abbreviated from
-#'  original name of "Excess spot return of long/short commodities portfolio"
-#'  \item \strong{InterestCarry.longshort} Return, numerical. Abbreviated from
-#'  original name of "Interest rate adjusted carry of long/short commodities portfolio"
-#'  \item \strong{Aggregate.forwardcurve:} Return, numerical. Abbreviated from
-#'  original name of "Aggregate backwardation/contango"
-#'  \item \strong{State.forwardcurve:} Factor w/ 2 levels "Contango", "Backwardation".
-#'  Abbreviated from original name of "State of backwardation/contango"
-#'  \item \strong{State.Inflation:} Factor w/ 2 levels "Inflation Down", "Inflation Up".
-#'   Abbreviated from original name of "State of inflation"
+#'  original name of "MOM^SS"
+#'  \item \strong{MOMFactorSS:} Rank-weighted momentum factor, MOM, ALL EQUITIES, SS
+#'  original name of "VAL^AA"
+#'  \item \strong{VALFactorAA:} Excess returns of a ranked-weighted value factor, VAL, ALL OTHER, AA
+#'  original name of "MOM^AA"
+#'  \item \strong{MOMFactorAA} Rank-weighted momentum factor, MOM, ALL OTHER, AA
+#'  original name of "VAL^US"
+#'  \item \strong{VALFactorUS:} Excess returns of a ranked-weighted value factor, VAL, US EQUITIES, US
+#'  original name of "MOM^US"
+#'  \item \strong{MOMFactorUS:} Rank-weighted momentum factor, MOM, US EQUITIES, US
+#'  original name of "VAL^UK"
+#'  \item \strong{VALFactorUK:} Excess returns of a ranked-weighted value factor, VAL, UK EQUITIES, UK
+#'  original name of "MOM^UK"
+#'  \item \strong{MOMFactorUK:} Rank-weighted momentum factor, MOM, UK EQUITIES, UK
+#'  original name of "VAL^EU"
+#'  \item \strong{VALFactorEU:} Excess returns of a ranked-weighted value factor, VAL, EUROPE EQUITIES, EU
+#'  original name of "MOM^EU"
+#'  \item \strong{MOMFactorEU:} Rank-weighted momentum factor, MOM, EUROPE EQUITIES, EU
+#'  original name of "VAL^JP"
+#'  \item \strong{VALFactorJP:} Excess returns of a ranked-weighted value factor, VAL, JAPAN EQUITIES, JP
+#'  original name of "MOM^JP"
+#'  \item \strong{MOMFactorJP:} Rank-weighted momentum factor, MOM, JAPAN EQUITIES, JP
+#'  original name of "VAL^EQ"
+#'  \item \strong{VALFactorEQ:} Excess returns of a ranked-weighted value factor, VAL, EQUITY INDICES, EQ
+#'  original name of "MOM^EQ"
+#'  \item \strong{MOMFactorEQ:} Rank-weighted momentum factor, MOM, EQUITY EQUITIES, EQ
+#'  original name of "VAL^FX"
+#'  \item \strong{VALFactorFX:} Excess returns of a ranked-weighted value factor, VAL, CURRENCIES, FX
+#'  original name of "MOM^FX"
+#'  \item \strong{MOMFactorFX:} Rank-weighted momentum factor, MOM, CURRENCIES, FX
+#'  original name of "VAL^FI"
+#'  \item \strong{VALFactorFI:} Excess returns of a ranked-weighted value factor, VAL, FIXED INCOME, FI
+#'  original name of "MOM^FI"
+#'  \item \strong{MOMFactorFI:} Rank-weighted momentum factor, MOM, FIXED INCOME, FI
+#'  original name of "VAL^CM"
+#'  \item \strong{VALFactorCM:} Excess returns of a ranked-weighted value factor, VAL, COMMODITIES, CM
+#'  original name of "MOM^CM"
+#'  \item \strong{MOMFactorCM:} Rank-weighted momentum factor, MOM, COMMODITIES, CM
 #' }
 #' @source
 #'
-#' Except where noted, data is updated and refreshed monthly in order to utilize
-#' the best available data. The data sources themselves may differ in order to
-#' allow for continued updating. In addition, the underlying data may be improved
-#' and expanded as it becomes available.
+#' The information has been provided to you solely for information purposes and
+#' does not constitute an offer or solicitation of an offer, or any advice or recommendation,
+#' to purchase any securities or other financial instruments, and may not be construed
+#' as such. All information provided herein is impersonal and not tailored to
+#' the needs of any person, entity, or group of persons. This information is
+#' subject to further review and revision. AQR is not responsible for any errors
+#' or omissions, regardless of the cause, for the results obtained from the use
+#' of the information.
 #'
-#' In 1865, the Chicago Board of Trade (CBOT) developed the first standardized
-#' futures contracts on grain trading. Daily high and low prices for multiple
-#' contract expirations on several commodity futures became available starting
-#' on 2 January 1877. We manually transcribed data from 1877 to 1951 from the
-#' Annual Report of the Trade and Commerce of the CBOT. After 1951 and before
-#' 2012, we took the futures prices for various contracts from the data vendor
-#' Commodity Systems Inc. After 2012, the futures prices are from Bloomberg. For
-#' base metals, we used rolled return series from Standard & Poor’s, Goldman
-#' Sachs, and Bloomberg.
+#' The information contained herein is only as current as of the date indicated,
+#' and may be superseded by subsequent market events or for other reasons. Charts
+#' and graphs provided herein are for illustrative purposes only. The information
+#' has been developed internally and/or obtained from sources believed to be reliable;
+#' however, AQR does not make any representation or warranty, express or implied,
+#' as to the information’s accuracy, adequacy or completeness of such information,
+#' nor does AQR recommend that the attached information serve as the basis of any
+#' investment decision. Nothing contained herein constitutes investment, legal, tax
+#' or other advice, nor is it to be relied on in making an investment or other decision.
 #'
-#' We constructed the annualized return on each commodity future by using the
-#' following procedure for data before 2015. For each month-end, we calculated
-#' the return on each contract from the previous month-end. For each month, we
-#' held the nearest of the contracts whose delivery month was at least two
-#' months away. The returns on the held contracts were spliced together on the
-#' roll dates. Using the same rolled contract series, we constructed a rolled
-#' price series and calculated the spot returns. For data after 2015, the roll
-#' date is the first day of GSCI roll window (i.e. the fifth business day of
-#' each month)
+#' There can be no assurance that an investment strategy will be successful.
+#' Historic market trends are not reliable indicators of actual future market behavior
+#' or future performance of any particular investment, which may differ materially,
+#' and should not be relied upon as such. This information should not be viewed as
+#' a current or past recommendation or a solicitation of an offer to buy or sell
+#' any securities or to adopt any investment strategy.
 #'
-#' After 1913, the monthly inflation rate was calculated from the US Consumer
-#' Price Index published by the US Bureau of Labor Statistics. Prior to 1913,
-#' we used data from Shiller (2000), who used the Warren and Pearson (1935)
-#' price index.
+#' Performance of all cited indices is calculated on a total-return basis with dividends reinvested.
 #'
-#' Discaimer:
-#' The Information has been provided to you solely for information purposes and
-#' does not constitute an offer or solicitation of an offer, or any advice or
-#' recommendation, to purchase any securities or other financial instruments,
-#' and may not be construed as such. All Information provided herein is impersonal
-#' and not tailored to the needs of any person, entity or group of persons.
-#' This Information is subject to further review and revision. AQR is not
-#' responsible for any errors or omissions, regardless of the cause, for the
-#' results obtained from the use of the Information.The Information contained
-#' herein is only as current as of the date indicated, and may be superseded by
-#' subsequent market events or for other reasons. Charts and graphs provided
-#' herein are for illustrative purposes only. The Information has been developed
-#' internally and/or obtained from sources believed to be reliable; however, AQR
-#' does not make any representation or warranty, express or implied, as to the
-#' Information’s accuracy, adequacy or completeness of such Information, nor
-#' does AQR recommend that the attached Information serve as the basis of any
-#' investment decision. Nothing contained herein constitutes investment, legal,
-#' tax or other advice, nor is it to be relied on in making an investment or
-#' other decision. There can be no assurance that an investment strategy will be
-#' successful. Historic market trends are not reliable indicators of actual
-#' future market behavior or future performance of any particular investment
-#' which may differ materially, and should not be relied upon as such. This
-#' Information should not be viewed as a current or past recommendation or a
-#' solicitation of an offer to buy or sell any securities or to adopt any
-#' investment strategy.
 #' The investment strategy and themes discussed herein may be unsuitable for
 #' investors depending on their specific investment objectives and financial
 #' situation. Please note that changes in the rate of exchange of a currency may
-#' affect the value, price or income of an investment adversely.
+#' affect the value, price, or income of an investment adversely.
 #'
 #' **Past performance of the Information is not an indication of future results.**
 #'
-#' \url{https://www.aqr.com/Insights/Datasets/Commodities-for-the-Long-Run-Index-Level-Data-Monthly}
-#' @examples  str(AQR_commodity)
-"AQR_commodity"
-
-
-
+#' \url{https://www.aqr.com/Insights/Datasets/Value-and-Momentum-Everywhere-Factors-Monthly}
+#' @examples  str(VME_Factors_OG)
+"VME FACTOR"
