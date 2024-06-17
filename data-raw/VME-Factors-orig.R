@@ -27,3 +27,6 @@ VME.Factors.orig <- xts::xts(VME.Factors.orig[,-1], order.by = as.yearmon(VME.Fa
 rm(AQR.VME.Factors.orig.url,
    variable.names
 )
+
+# Save to sandbox if needed
+save(VME.Factors.orig, file = paste0("data/VME_Factors_OG.RData"), compress = "xz", compression_level = 9)
