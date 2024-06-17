@@ -41,3 +41,7 @@ rm(
   , variable.names
   , TSM.vars
 )
+
+# Save to sandbox if needed
+save(TSM, file = paste0("data/Time_Series_Momentum.RData"), compress = "xz", compression_level = 9)
+

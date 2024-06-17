@@ -22,3 +22,6 @@ CRP <- xts::xts(x = CRP[,-1], order.by = as.yearmon(CRP[,1]))
 
 ## Remove unused variables
 rm(AQR.CRP.url, variable.names)
+
+# Save to sandbox if needed
+save(CRP, file = paste0("data/Credit_Risk_Premium_Preliminary.RData"), compress = "xz", compression_level = 9)

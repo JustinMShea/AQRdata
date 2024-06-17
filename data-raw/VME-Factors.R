@@ -1,9 +1,9 @@
 
 ## Value and Momentum Everywhere: Factors, Monthly
 #
-# Last Updated by AQR: May 31, 2020
+# Last Updated by AQR: March 29, 2024
 #
-# Period: 1972-01-31 to 2020-05-31
+# Period: 1972-01-31 to 2024-03-29
 #
 # Source: https://www.aqr.com/Insights/Datasets/Value-and-Momentum-Everywhere-Factors-Monthly
 
@@ -36,3 +36,8 @@ rm(AQR.VME.Factors.url,
   variable.names,
   VME.Factors.vars
 )
+
+# Save to sandbox if needed
+save(VME.Factors, file = paste0("data/VME_Factors.RData"), compress = "xz", compression_level = 9)
+
+
