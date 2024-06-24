@@ -3,7 +3,7 @@
 #
 # Last Updated by AQR (reported): April 30, 2020
 #
-# Period: 1985-01-31 to 2020-05-29
+# Period: 1985-01-31 to 2024-05-31
 #
 # Source: https://www.aqr.com/Insights/Datasets/Time-Series-Momentum-Factors-Monthly
 
