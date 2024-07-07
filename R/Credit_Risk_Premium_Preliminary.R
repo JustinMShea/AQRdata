@@ -26,7 +26,7 @@
 #'
 #' @docType data
 #'
-#' @usage data('Credit_Risk_Premium_Preliminary')
+#' @usage data('CRP')
 #'
 #' @format An xts object on Jan 1926 / Dec 2014 containing: Data: 1068 entries, 3 total columns
 #' \itemize{
@@ -77,5 +77,5 @@
 #' **Past performance of the Information is not an indication of future results.**
 #'
 #' \url{https://www.aqr.com/Insights/Datasets/Credit-Risk-Premium-Preliminary-Paper-Data}
-#' @examples  str(Credit_Risk_Premium_Preliminary)
+#' @examples  str(CRP)
 "Credit Risk Premium Preliminary"

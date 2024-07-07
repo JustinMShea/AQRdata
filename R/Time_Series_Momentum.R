@@ -33,7 +33,7 @@
 #'
 #' @docType data
 #'
-#' @usage data('Time_Series_Momentum')
+#' @usage data('TSM')
 #'
 #' @format An xts object on Jan 1985 / Jun 2024 containing: Data: 472 obs. of  6 variables
 #' \itemize{
@@ -139,5 +139,5 @@
 #' **Past performance of the Information is not an indication of future results.**
 #'
 #' \url{https://www.aqr.com/Insights/Datasets/Time-Series-Momentum-Original-Paper-Data}
-#' @examples  str(Time_Series_Momentum)
+#' @examples  str(TSM)
 "Time Series Momentum"

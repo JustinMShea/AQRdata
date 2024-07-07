@@ -43,5 +43,5 @@ rm(
 )
 
 # Save to sandbox if needed
-save(TSM, file = paste0("data/Time_Series_Momentum.RData"), compress = "xz", compression_level = 9)
+save(TSM, file = paste0("data/TSM.RData"), compress = "xz", compression_level = 9)
 

@@ -56,4 +56,4 @@ COMLR <- xts::xts(COMLR[, -1], order.by = COMLR$DATE)
 rm(AQR.COMLR.url, COMLR.raw, tmp)
 
 # Save to sandbox if needed
-save(COMLR, file = paste0("data/AQR_commodity_for_the_long_run_OG.RData"), compress = "xz", compression_level = 9)
+save(COMLR, file = paste0("data/COMLR.RData"), compress = "xz", compression_level = 9)

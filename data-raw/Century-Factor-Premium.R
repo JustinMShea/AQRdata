@@ -60,4 +60,4 @@ rm(
 )
 
 # Save to sandbox if needed
-save(CFP, file = paste0("data/Century_Factor_Premium.RData"), compress = "xz", compression_level = 9)
+save(CFP, file = paste0("data/CFP.RData"), compress = "xz", compression_level = 9)
