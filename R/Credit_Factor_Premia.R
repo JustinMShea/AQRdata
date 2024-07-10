@@ -238,5 +238,5 @@
 #'  marketing document.
 #'
 #' \url{https://images.aqr.com/-/media/AQR/Documents/Insights/Data-Sets/Century-of-Factor-Premia-Monthly.xlsx}
-#' @examples  str(Credit_Factor_Premia)
+#' @examples  str('Credit_Factor_Premia')
 "Credit_Factor_Premia"
