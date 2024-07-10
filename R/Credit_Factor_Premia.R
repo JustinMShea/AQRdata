@@ -1,0 +1,242 @@
+#' How Do Factor Premia Vary Over Time? A Century of Evidence
+#'
+#'This data set is related to "How Do Factor Premia Vary Over Time? A Century of
+#'Evidence" (Ilmanen, Israel, Lee, Moskowitz and Thapar, 2021). We examine four
+#'prominent factor premia – value, momentum, carry, and defensive – over a century
+#'from six asset classes. We verify their existence with a mass of out-of-sample
+#'evidence across time and asset markets. We find little evidence for arbitrage
+#'activity influencing returns, though some novel evidence of overfitting biases.
+#'We identify meaningful time variation in factor risk-adjusted returns that appears
+#'unrelated to macroeconomic risks, supporting other theories of dynamic return premia.
+#'Attempting to capture this variation, we evaluate various factor timing strategies,
+#'but find relatively modest predictability that likely fails to overcome
+#'implementation frictions.
+#'
+#' Data loads lazily.
+#'
+#' @section Notes: This file contains monthly self-financing excess returns of
+#' long/short "Do Factor Premia Vary Over Time? A Century of Evidence" factors.
+#' Paper: 	Ilmanen, Israel, Lee, Moskowitz & Thapar (2021), “How Do Factor Premia
+#' Vary Over Time? A Century of Evidence"
+#' Copyright ©2019, AQR
+#'
+#' @docType data
+#'
+#' @usage data('Credit_Factor_Premia')
+#'
+#'@format An xts object on 1987-02-27 / 2024-04-30 containing: Data: 447 entries, 45 total columns
+#' \itemize{
+#'  \item \strong{Date:} Date, monthly periodicity. Formatted in as a Date object in %m %Y format.
+#'  \item \strong{VAL.US:} Numerical, Return of value US stocks
+#'  original name of "US Stock Selection Value"
+#'  \item \strong{MOM.US} Numerical, Return of momentum US stocks
+#'  original name of "US Stock Selection Momentum"
+#'  \item \strong{DEFENSIVE.US} Numerical, Return of defensive US stocks
+#'  original name of "US Stock Selection Defensive"
+#'  \item \strong{MULTI.STYLE.US:} Numerical, Return of multi-style US stocks
+#'  original name of "US Stock Selection Multi-style"
+#'  \item \strong{VAL.INTL:} Numerical, Return of value international stocks
+#'  original name of "Intl Stock Selection Value"
+#'  \item \strong{MOM.INTL:} Numerical, Return of momentum international stocks
+#'  original name of "Intl Stock Selection Momentum"
+#'  \item \strong{DEFENSIVE.INTL:} Numerical, Return of defensive international stocks
+#'  original name of "Intl Stock Selection Defensive"
+#'  \item \strong{MULTI.STYLE.INTL:} Numerical, Return of multi-style international stocks
+#'  original name of "Intl Stock Selection Multi-style"
+#'  \item \strong{VAL.EQ:} Numerical, Return of value equity indices
+#'  original name of "Equity indices Value"
+#'  \item \strong{MOM.EQ:} Numerical, Return of momentum equity indices
+#'  original name of "Equity indices Momentum"
+#'  \item \strong{CARRY.EQ:} Numerical, Return of carry equity indices
+#'  original name of "Equity indices Carry"
+#'  \item \strong{DEFENSIVE.EQ:} Numerical, Return of defensive equity indices
+#'  original name of "Equity indices Defensive"
+#'  \item \strong{MULTI.STYLE.EQ:} Numerical, Return of multi-style equity indices
+#'  original name of "Equity indices Multi-style"
+#'  \item \strong{VAL.FI:} Numerical, Return of value fixed income
+#'  original name of "Fixed income Value"
+#'  \item \strong{MOM.FI:} Numerical, Return of momentum fixed income
+#'  original name of "Fixed income Momentum"
+#'  \item \strong{CARRY.FI:} Numerical, Return of carry fixed income
+#'  original name of "Fixed income Carry"
+#'  \item \strong{DEFENSIVE.FI:} Numerical, Return of defensive fixed income
+#'  original name of "Fixed income Defensive"
+#'  \item \strong{MULTI.STYLE.FI:} Numerical, Return of multi-style fixed income
+#'  original name of "Fixed income Multi-style"
+#'  \item \strong{VAL.FX:} Numerical, Return of value currencies
+#'  original name of "Currencies Value"
+#'  \item \strong{MOM.FX:} Numerical, Return of momentum currencies
+#'  original name of "Currencies Momentum"
+#'  \item \strong{CARRY.FX:} Numerical, Return of carry currencies
+#'  original name of "Currencies Carry"
+#'  \item \strong{MULTI.STYLE.FX:} Numerical, Return of multi-style currencies
+#'  original name of "Currencies Multi-style"
+#'  \item \strong{VAL.CM:} Numerical, Return of value commodities
+#'  original name of "Commodities Value"
+#'  \item \strong{MOM.CM:} Numerical, Return of momentum commodities
+#'  original name of "Commodities Momentum"
+#'  \item \strong{CARRY.CM:} Numerical, Return of carry commodities
+#'  original name of "Commodities Carry"
+#'  \item \strong{MULTI.STYLE.CM:} Numerical, Return of multi-style commodities
+#'  original name of "Commodities Multi-style"
+#'  \item \strong{VAL.GLOBAL:} Numerical, Return of value all stock selection
+#'  original name of "All Stock Selection Value"
+#'  \item \strong{MOM.GLOBAL:} Numerical, Return of momentum all stock selection
+#'  original name of "All Stock Selection Momentum"
+#'  \item \strong{DEFENSIVE.GLOBAL:} Numerical, Return of defensive all stock selection
+#'  original name of "All Stock Selection Defensive"
+#'  \item \strong{MULTI.STYLE.GLOBAL:} Numerical, Return of multi-style all stock selection
+#'  original name of "All Stock Selection Multi-style"
+#'  \item \strong{VAL.AM:} Numerical, Return of value all macro
+#'  original name of "All Macro Value"
+#'  \item \strong{MOM.AM:} Numerical, Return of momentum all macro
+#'  original name of "All Macro Momentum"
+#'  \item \strong{CARRY.AM:} Numerical, Return of carry all macro
+#'  original name of "All Macro Carry"
+#'  \item \strong{DEFENSIVE.AM:} Numerical, Return of defensive all macro
+#'  original name of "All asset classes Defensive"
+#'  \item \strong{MULTI.STYLE.AM:} Numerical, Return of multi-style all macro
+#'  original name of "All asset classes Multi-style"
+#'  \item \strong{EQ.MARKET:} Numerical, Return of market equity indices
+#'  original name of "Equity indices Market"
+#'  \item \strong{FI.MARKET:} Numerical, Return of market fixed income
+#'  original name of "Fixed income Market"
+#'  \item \strong{CM.MARKET:} Numerical, Return of market commodities
+#'  original name of "Commodities Market"
+#'  \item \strong{AM.MARKET:} Numerical, Return of market all Macro
+#'  original name of "All Macro Market
+#' }
+#' @source
+#'
+#'
+#'
+#'The Information has been provided to you solely for information purposes and
+#'does not constitute an offer or solicitation of an offer, or any advice or
+#'recommendation, to purchase any securities or other financial instruments, and
+#'may not be construed as such. All Information provided herein is impersonal
+#'and not tailored to the needs of any person, entity or group of persons. This
+#'Information is subject to further review and revision. AQR is not responsible
+#'for any error or omissions, regardless of the cause, for the results obtained
+#'from the use of the Information.
+#'
+#'The information contained herein is only as current as of the date indicated,
+#'and may be superseded by subsequent market events or for other reasons. Charts
+#'and graphs provided herein are for illustrative purposes only. The Information
+#'has been developed internally and/or obtained from sources believed to be reliable;
+#' however, AQR does not make any representation or warranty, express of implied, as
+#' to the Information’s accuracy, adequacy or completeness of such Information,
+#' nor does AQR recommend that the attached Information serve as the basis of
+#' any investment decision. Nothing contained herein constitutes investment, legal,
+#' tax or other advice, nor is it to be relied on in making an investment or other
+#' decision.
+#'
+#' This presentation is not research and should not be treated as research. This
+#' presentation does not represent valuation judgments with respect to any financial
+#' instrument, issuer, security or sector that may be described or referenced
+#' herein and does not represent a formal or official view of AQR.
+#'
+#' There can be no assurance that an investment strategy will be successful.
+#' Historic market trends are not reliable indicators of actual futures market
+#' behavior or future performance of any particular investment which may differ
+#' materially, and should not be relied upon as such. This Information should not
+#' e viewed as a current or past recommendation or a solicitation of an offer to
+#' buy or sell securities or to adopt any investment strategy.
+#'
+#' Performance of all cited indices is calculated on a total-return basis with
+#' dividends reinvested.
+#'
+#' The investment strategy and themes discussed herein may be unsuitable for
+#' investors depending on their specific investment objectives and financial
+#' situation. Please note that changes in the rate of exchange of a currency may
+#' affect the value, price or income of an investment adversely.
+#'
+#' **Past performance of the Information is not an indication of future results.**
+#'
+#' HYPOTHETICAL PERFORMANCE RESULTS HAVE MANY INHERENT LIMITATIONS, SOME OF WHICH,
+#' BUT NOT ALL, ARE DESCRIBED HEREIN. NO REPRESENTATION IS BEING MADE THAT ANY
+#' FUND OR ACCOUNT WILL OR IS LIKELY TO ACHIEVE PROFITS OR LOSSES SIMILAR TO THOSE
+#' SHOWN HEREIN. IN FACT, THERE ARE FREQUENTLY SHARP DIFFERENCES BETWEEN HYPOTHETICAL
+#' PERFORMANCE RESULTS AND THE ACTUAL RESULTS SUBSEQUENTLY REALIZED BY ANY PARTICULAR
+#' TRADING PROGRAM. ONE OF THE LIMITATIONS OF HYPOTHETICAL PERFORMANCE RESULTS IS
+#' THAT THEY ARE GENERALLY PREPARED WITH THE BENEFIT OF HINDSIGHT. IN ADDITION,
+#' HYPOTHETICAL TRADING DOES NOT INVOLVE FINANCIAL RISK, AND NO HYPOTHETICAL TRADING
+#' RECORD CAN COMPLETELY ACCOUNT FOR THE IMPACT OF FINANCIAL RISK IN ACTUAL TRADING.
+#' FOR EXAMPLE, THE ABILITY TO WITHSTAND LOSSES OR TO ADHERE TO A PARTICULAR TRADING
+#' PROGRAM IN SPITE OF TRADING LOSSES ARE MATERIAL POINTS THAT CAN ADVERSELY AFFECT
+#' ACTUAL TRADING RESULTS. THERE ARE NUMEROUS OTHER FACTORS RELATED TO THE MARKETS
+#' IN GENERAL OR TO THE IMPLEMENTATION OF ANY SPECIFIC TRADING PROGRAM WHICH CANNOT
+#' BE FULLY ACCOUNTED FOR IN THE PREPARATION OF HYPOTHETICAL PERFORMANCE RESULTS,
+#' ALL OF WHICH CAN ADVERSELY AFFECT ACTUAL TRADING RESULTS. The hypothetical
+#' performance results contained herein represent the application of the
+#' quantitative models as currently in effect on the date first written above
+#' and there can be no assurance that the models will remain the same in the
+#' future or that an application of the current models in the future will produce
+#' similar results because the relevant market and economic conditions that
+#' prevailed during the hypothetical performance period will not necessarily recur.
+#' Discounting factors may be applied to reduce suspected anomalies. This backtest’s
+#' return, for this period, may vary depending on the date it is run. Hypothetical
+#' performance results are presented for illustrative purposes only. In addition,
+#' our transaction cost assumptions utilized in backtests, where noted, are based
+#' on AQR Capital Management, LLC’s, (“AQR”)’s historical realized transaction
+#' costs and market data. Certain of the assumptions have been made for modeling
+#' purposes and are unlikely to be realized. No representation or warranty is made
+#' as to the reasonableness of the assumptions made or that all assumptions used
+#' in achieving the returns have been stated or fully considered. Changes in the
+#' assumptions may have a material impact on the hypothetical return.
+#'
+#' AQR Capital Management, LLC is exempt from the requirement to hold an Australian
+#' Financial Services License under the Corporations Act  2001 (Cth).  AQR Capital
+#' Management, LLC is regulated by the Securities and Exchange Commission ("SEC")
+#' under United States of America laws, which differ from Australian laws.  Please
+#' note that this document has been prepared in accordance with SEC requirements
+#' and not Australian laws.
+#'
+#' Canadian recipients of fund information: These materials are provided by AQR
+#' Capital Management (Canada), LLC, Canadian placement agent for the AQR funds.
+#'
+#' Please note for materials distributed through AQR Capital Management (Asia)
+#'
+#' This presentation may not be copied, reproduced, republished, posted,
+#' transmitted, disclosed, distributed or disseminated, in whole or in part, in
+#' any way without the prior written consent of AQR Capital Management (Asia)
+#' Limited (together with its affiliates, “AQR”) or as required by applicable law.
+#'
+#' This presentation and the information contained herein are for educational and
+#' informational purposes only and do not constitute and should not be construed
+#' as an offering of advisory services or as an invitation, inducement or offer
+#' to sell or solicitation of an offer to buy any securities, related financial
+#' instruments or financial products in any jurisdiction.
+#'
+#' Investments described herein will involve significant risk factors which will
+#' be set out in the offering documents for such investments and are not described
+#' in this presentation. The information in this presentation is general only and
+#' you should refer to the final private information memorandum for complete
+#' information. To the extent of any conflict between this presentation and the
+#' private information memorandum, the private information memorandum shall prevail.
+#'
+#' The contents of this presentation have not been reviewed by any regulatory
+#' authority in Hong Kong. You are advised to exercise caution and if you are in
+#' any doubt about any of the contents of this presentation, you should obtain
+#' independent professional advice.
+#'
+#' AQR in the United Kingdom is AQR Capital Management (Europe) LLP, a U.K.
+#' limited liability partnership with its office at Charles House 5-11 Regent
+#' St. London, SW1Y 4LR, which is authorized and regulated by the U.K. Financial
+#' Conduct Authority (“FCA”) .This [factsheet/presentation] is a financial promotion
+#' and has been approved by AQR Capital Management (Europe) LLP.
+#'
+#' AQR in Germany and the European Economic Area is AQR Capital Management (Germany)
+#' GmbH, a German limited liability company (Gesellschaft mit beschränkter Haftung;
+#'  “GmbH”), authorized and regulated by the German Federal Financial Supervisory
+#'  Authority (Bundesanstalt für Finanzdienstleistungsaufsicht, „BaFin“), with
+#'  offices at Marie-Curie-Str. 24-28, 60439, Frankfurt am Main und Graurheindorfer
+#'  Str. 108, 53117 Bonn to provide the services of investment advice (Anlageberatung)
+#'  and investment broking (Anlagevermittlung) pursuant to the German Banking Act
+#'  (Kreditwesengesetz; “KWG”). The Complaint Handling Procedure for clients and
+#'  prospective clients of AQR in Germany and the European Economic Area can be
+#'  found here: https://ucits.aqr.com/Legal-and-Regulatory. This document is a
+#'  marketing document.
+#'
+#' \url{https://images.aqr.com/-/media/AQR/Documents/Insights/Data-Sets/Century-of-Factor-Premia-Monthly.xlsx}
+#' @examples  str(Credit_Factor_Premia)
+"Credit_Factor_Premia"
