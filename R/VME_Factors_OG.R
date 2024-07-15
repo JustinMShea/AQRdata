@@ -1,18 +1,20 @@
-#' Value and Momentum Everywhere: Original Paper Data, Long/Short Factors
+#' Value and Momentum Everywhere: Portfolios, Monthly
 #'
-#'This data set is related to “Value and Momentum Everywhere” (Asness, Moskowitz
-#'and Pedersen, 2012), in which we find consistent value and momentum return premia
-#'across eight diverse markets and asset classes, and a common factor structure
-#'among their returns. Value and momentum returns correlate more strongly across asset classes
-#'than passive exposures to the asset classes, but value and momentum are negatively
-#'correlated with each other, both within and across asset classes.
-#'We construct Value and Momentum Everywhere (VME) factors as zero-cost long/short
-#'portfolios for both value and momentum in the eight markets/asset classes.
-#'The eight markets and asset classes covered are: individual stocks in the U.S.,
-#'the U.K., continental Europe and Japan; equity index futures; government bonds; currencies;
-#'and commodity futures. There are also three aggregated factors covering stock selection,
-#'asset allocation and all assets. This data set is an updated and extended version of the
-#'paper data, with VME factor returns starting in January 1972 and updated monthly.
+#' This data set is related to “Value and Momentum Everywhere” (Asness, Moskowitz 
+#' and Pedersen, 2012), in which we find consistent value and momentum return 
+#' premia across eight diverse markets and asset classes, and a common factor 
+#' structure among their returns. Value and momentum returns correlate more 
+#' strongly across asset classes than passive exposures to the asset classes, but 
+#' value and momentum are negatively correlated with each other, both within and 
+#' across asset classes.
+#' 
+#' We construct Value and Momentum Everywhere (VME) portfolios as long-only 
+#' tertiles for both value and momentum for eight markets/asset classes, resulting 
+#' in 48 total portfolios. The eight markets and asset classes covered are: 
+#' individual stocks in the U.S., the U.K., continental Europe and Japan; equity 
+#' index futures; government bonds; currencies; and commodity futures. This data 
+#' set is an updated and extended version of the paper data, with VME factor 
+#' returns starting in January 1972 and updated monthly.
 #'
 #' Data loads lazily.
 #'
@@ -29,13 +31,10 @@
 #' @format An xts object on Jan 1972 / Jul 2011 containing: Data: 475 entries, 22 total columns
 #' \itemize{
 #'  \item \strong{Date:} Date, monthly periodicity. Formatted in as a Date object in %m/%d/%Y format.
-#'  original name of "VAL"
-#'  \item \strong{VAL.EVR:} Excess returns of a ranked-weighted value factor, VAL, EVERYWHERE
-#'  original name of "MOM"
-#'  \item \strong{ExcessSpot.Return.Equal:} Rank-weighted momentum factor, MOM, EVERYWHERE
-#'  original name of "VAL^SS"
-#'  \item \strong{VALFactorSS:} Excess returns of a ranked-weighted value factor, VAL, ALL EQUITIES, SS
-#'  original name of "MOM^SS"
+#'  \item \strong{VAL1US:} Excess returns of Value US equities in the lowest group. 
+#'  \item \strong{VAL2US:} Excess returns of Value US equities in the medium group. 
+#'  \item \strong{VAL3US:} Excess returns of Value US equities in the large group. 
+#'  
 #'  \item \strong{MOMFactorSS:} Rank-weighted momentum factor, MOM, ALL EQUITIES, SS
 #'  original name of "VAL^AA"
 #'  \item \strong{VALFactorAA:} Excess returns of a ranked-weighted value factor, VAL, ALL OTHER, AA
