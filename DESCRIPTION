@@ -7,11 +7,11 @@ Authors@R: c(
     person("Corties X.", "Draper", role = c("aut"), email = "Cortiesxdraper@gmail.com")
     )
 Description: This R package provides access to return series from hypothetical 
-  portfolios in academic articles by AQR researchers. Datasets include long-only 
-  excess returns and long/short factor premia, with varying granularity and both 
-  monthly and daily returns. Each dataset links to a specific paper, reflecting 
-  returns to portfolios as described, not live returns or backtests of AQR 
-  portfolios. Users should cite “AQR Capital Management, LLC.”
+  portfolios in used in academic articles by AQR researchers. Datasets include 
+  long only excess returns and long short factor premia, with varying granularity 
+  of both monthly and daily returns. Each dataset links to a specific paper, 
+  reflecting returns to portfolios as described, not live returns or backtests 
+  of AQR portfolios. Users should cite “AQR Capital Management, LLC.”.
 Depends: R (>= 3.5.0)
 License: GPL-3
 Encoding: UTF-8
@@ -21,4 +21,8 @@ VignetteBuilder: knitr
 LazyDataCompression: xz
 URL: https://justinmshea.github.io/AQRdata/
 BugReports: https://github.com/JustinMShea/AQRdata/issues/
+<<<<<<< HEAD
 RoxygenNote: 7.3.2
+=======
+RoxygenNote: 7.3.0
+>>>>>>> b4db1374800c662f8762894e15bfe41d780ec459

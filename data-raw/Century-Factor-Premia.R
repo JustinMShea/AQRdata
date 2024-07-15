@@ -48,7 +48,7 @@ variable.names <- c(variables.swapped, tmp[41:45])
 variable.names
 # Reassign names
 colnames(CFP) <- variable.names
-
+Credit_Factor_Premia <- CFP
 ## Remove unused variables
 rm(
   AQR.CFP.url
@@ -57,7 +57,8 @@ rm(
   , variable.names
   , variables.split
   , variables.swapped
+  , CFP
 )
 
 # Save to sandbox if needed
-save(CFP, file = paste0("data/CFP.RData"), compress = "xz", compression_level = 9)
+save(Credit_Factor_Premia, file = paste0("data/Credit_Factor_Premia.RData"), compress = "xz", compression_level = 9)
