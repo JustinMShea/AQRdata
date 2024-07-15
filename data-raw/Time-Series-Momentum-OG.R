@@ -1,15 +1,15 @@
 
-# Time Series Momentum: Factors, Monthly (AQR)
-#
-# Last Updated by AQR (reported): April 30, 2020
+# Time Series Momentum: Original Paper Data
+
+# Last Updated by AQR (reported): February 27, 2018
 #
 # Period: 1985-01-31 to 2024-05-31
 #
-# Source: https://www.aqr.com/Insights/Datasets/Time-Series-Momentum-Factors-Monthly
+# Source: https://www.aqr.com/Insights/Datasets/Time-Series-Momentum-Original-Paper-Data
 
 ## Import data in R
-AQR.TSM.url <- "https://images.aqr.com/-/media/AQR/Documents/Insights/Data-Sets/Time-Series-Momentum-Factors-Monthly.xlsx"
-TSM.raw <- openxlsx::read.xlsx(AQR.TSM.url, startRow = 18, detectDates = TRUE)
+AQR.TSM.url <- "https://www.aqr.com/-/media/AQR/Documents/Insights/Data-Sets/Time-Series-Momentum-Original-Paper-Data.xlsx"
+TSM.raw <- openxlsx::read.xlsx(AQR.TSM.url, startRow = 11, detectDates = TRUE)
 
 ## Clean up
 TSM <- TSM.raw
@@ -42,6 +42,8 @@ rm(
   , TSM.vars
 )
 
+TSM <- xts::xts(TSM[,-1], order.by = TSM$DATE)
+
 # Save to sandbox if needed
-save(TSM, file = paste0("data/TSM.RData"), compress = "xz", compression_level = 9)
+save(TSM, file = paste0("data/TSM.OG.RData"), compress = "xz", compression_level = 9)
 

@@ -140,4 +140,4 @@
 #'
 #' \url{https://www.aqr.com/Insights/Datasets/Time-Series-Momentum-Original-Paper-Data}
 #' @examples  str(TSM)
-"Time Series Momentum"
+"TSM"

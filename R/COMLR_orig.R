@@ -99,6 +99,6 @@
 #' 
 #' \url{https://images.aqr.com/-/media/AQR/Documents/Insights/Data-Sets/Commodities-for-the-Long-Run-Original-Paper-Data.xlsx}
 #' @examples  str(COMLR)
-"AQR_commodity_Orig"
+"COMLR"
 
 

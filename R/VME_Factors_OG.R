@@ -113,4 +113,4 @@
 #'
 #' \url{https://www.aqr.com/Insights/Datasets/Value-and-Momentum-Everywhere-Factors-Monthly}
 #' @examples  str(VME_Factors_orig)
-"VME FACTOR"
+"VME_Factors_orig"

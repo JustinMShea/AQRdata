@@ -78,4 +78,4 @@
 #'
 #' \url{https://www.aqr.com/Insights/Datasets/Credit-Risk-Premium-Preliminary-Paper-Data}
 #' @examples  str(CRP)
-"Credit Risk Premium Preliminary"
+"CRP"
