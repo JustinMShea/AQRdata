@@ -1,27 +1,27 @@
 #' Betting Against Beta: Equity Factors Data, Monthly
 #'
-#'This data set is related to “Betting Against Beta” (Frazzini and Pedersen, 2014). 
-#'A basic premise of the capital asset pricing model (CAPM) is that all agents 
-#'invest in the portfolio with the highest Sharpe ratio, or expected excess return 
-#'per unit of risk, and leverage or de-leverage this portfolio to suit their risk 
-#'preferences. However, many investors — such as individuals, pension funds and 
-#'mutual funds — are constrained in the leverage that they can take, and therefore 
-#'overweight riskier securities instead. This behavior of tilting toward beta 
-#'suggests high-beta assets require lower risk-adjusted returns than low-beta 
-#'assets. Indeed, the security market line for U.S. stocks is too flat relative 
-#'to the CAPM and is better explained by the CAPM with limited borrowing. This 
-#'raises several questions: What is the magnitude of this anomaly relative to the 
-#'size, value and momentum effects? Is betting against beta rewarded in other 
-#'countries and asset classes? How does the return premium vary over time and in 
-#'the cross section? How does one bet against beta? To explore these questions, 
-#'we construct market-neutral betting-against-beta (BAB) factors, which are long 
-#'leveraged low-beta assets and short high-beta assets.
+#' This data set is related to “Betting Against Beta” (Frazzini and Pedersen, 2014). 
+#' A basic premise of the capital asset pricing model (CAPM) is that all agents 
+#' invest in the portfolio with the highest Sharpe ratio, or expected excess return 
+#' per unit of risk, and leverage or de-leverage this portfolio to suit their risk 
+#' preferences. However, many investors — such as individuals, pension funds and 
+#' mutual funds — are constrained in the leverage that they can take, and therefore 
+#' overweight riskier securities instead. This behavior of tilting toward beta 
+#' suggests high-beta assets require lower risk-adjusted returns than low-beta 
+#' assets. Indeed, the security market line for U.S. stocks is too flat relative 
+#' to the CAPM and is better explained by the CAPM with limited borrowing. This 
+#' raises several questions: What is the magnitude of this anomaly relative to the 
+#' size, value and momentum effects? Is betting against beta rewarded in other 
+#' countries and asset classes? How does the return premium vary over time and in 
+#' the cross section? How does one bet against beta? To explore these questions, 
+#' we construct market-neutral betting-against-beta (BAB) factors, which are long 
+#' leveraged low-beta assets and short high-beta assets.
 #'
-#'This data set is an updated and extended version of the paper data, for which 
-#'we provide long/short BAB equity factors. BAB equity factors are for U.S. 
-#'equities and 23 international equity markets (as well as multiple international 
-#'and global aggregates). Data is updated and extended monthly. We also provide 
-#'the returns for several additional global factors for reference.
+#' This data set is an updated and extended version of the paper data, for which 
+#' we provide long/short BAB equity factors. BAB equity factors are for U.S. 
+#' equities and 23 international equity markets (as well as multiple international 
+#' and global aggregates). Data is updated and extended monthly. We also provide 
+#' the returns for several additional global factors for reference.
 #'
 #' Data loads lazily.
 #'

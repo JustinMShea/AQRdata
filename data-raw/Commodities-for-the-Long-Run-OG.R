@@ -1,9 +1,11 @@
-
 # Commodities for the Long Run: Index Level Data, Monthly
 #
 # Period: 1877-02-28 to 2020-05-29
 #
 # Source: https://www.aqr.com/Insights/Datasets/Commodities-for-the-Long-Run-Index-Level-Data-Monthly
+
+library(gdata)
+library(xts)
 
 ## Import data
 #AQR.COMLR.url <- "https://images.aqr.com/-/media/AQR/Documents/Insights/Data-Sets/Commodities-for-the-Long-Run-Index-Level-Data-Monthly.xlsx"
@@ -56,4 +58,4 @@ AQR_Commodity_og <- COMLR
 rm(AQR.COMLR.url, COMLR.raw, COMLR, tmp)
 
 # Save to sandbox if needed
-save(AQR_Commodity_og, file = paste0("data/AQR_Commodity_og.RData"), compress = "xz", compression_level = 9)
+save(AQR_Commodity_og, file = paste0("data/Commodities.Long.Run.OG.RData"), compress = "xz", compression_level = 9)

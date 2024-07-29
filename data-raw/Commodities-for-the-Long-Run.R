@@ -1,6 +1,8 @@
-
-## Commodities for the Long Run: Index Level Data, Monthly ##
- # https://www.aqr.com/Insights/Datasets/Commodities-for-the-Long-Run-Index-Level-Data-Monthly
+# Commodities for the Long Run: Index Level Data, Monthly
+#
+# Period: Feb 1877 to Dec 2015
+#
+# Source: https://www.aqr.com/Insights/Datasets/Commodities-for-the-Long-Run-Index-Level-Data-Monthly
 
  # Download
 
@@ -24,5 +26,5 @@ AQR_commodity$State.forwardcurve <- as.factor(AQR_commodity $State.forwardcurve)
 AQR_commodity$State.Inflation <- as.factor(AQR_commodity$State.Inflation)
 
  # Save to sandbox if needed
-save(AQR_commodity, file = paste0("data/AQR_commodity.RData"), compress = "xz", compression_level = 9)
+save(AQR_commodity, file = paste0("data/Commodities.Long.Run.Index.Level.RData"), compress = "xz", compression_level = 9)
 
