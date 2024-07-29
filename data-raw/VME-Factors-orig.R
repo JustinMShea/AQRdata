@@ -6,6 +6,8 @@
 
 # Source: https://images.aqr.com/Insights/Datasets/Value-and-Momentum-Everywhere-Factors-Monthly
 
+library(xts)
+
 ##Download data to R
 AQR.VME.Factors.orig.url <- "https://images.aqr.com/-/media/AQR/Documents/Insights/Data-Sets/Value-and-Momentum-Everywhere-Original-Paper-Data.xlsx"
 VME_Factors_orig <- openxlsx::read.xlsx(AQR.VME.Factors.orig.url, sheet = 2, startRow = 15, colNames = TRUE, detectDates =  TRUE)

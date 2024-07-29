@@ -87,7 +87,7 @@ ESG.Efficient.Frontier.url <- "https://www.aqr.com/-/media/AQR/Documents/Insight
       variable.names <- colnames(ESG.VW.ESG)
       
       # New column names
-      new_colnames <- c("DATE", "ESG1", "ESG2", "ESG3", "ESG4", "ESG4.1") 
+      new_colnames <- c("DATE", "ESG1", "ESG2", "ESG3", "ESG4", "ESG5", "ESG5.1") 
       
       # Assigning the new column names to the data frame
       colnames(ESG.VW.ESG) <- new_colnames

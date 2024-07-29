@@ -1,0 +1,91 @@
+#' Value and Momentum Everywhere: Portfolios, Monthly
+#'
+#' This data set is related to “Value and Momentum Everywhere” (Asness, Moskowitz 
+#' and Pedersen, 2012), in which we find consistent value and momentum return 
+#' premia across eight diverse markets and asset classes, and a common factor 
+#' structure among their returns. Value and momentum returns correlate more 
+#' strongly across asset classes than passive exposures to the asset classes, 
+#' but value and momentum are negatively correlated with each other, both within 
+#' and across asset classes.
+#' 
+#' We construct Value and Momentum Everywhere (VME) portfolios as long-only 
+#' tertiles for both value and momentum for eight markets/asset classes, 
+#' resulting in 48 total portfolios. The eight markets and asset classes covered 
+#' are: individual stocks in the U.S., the U.K., continental Europe and Japan; 
+#' equity index futures; government bonds; currencies; and commodity futures. 
+#' This data set is an updated and extended version of the paper data, with VME 
+#' factor returns starting in January 1972 and updated monthly.
+#'
+#' Data loads lazily.
+#'
+#' @section Notes: This file contains monthly excess returns of long-only Value 
+#' and Momentum Portfolios using the definitions of Asness, Moskowitz and 
+#' Pedersen (2013).
+#' Paper: 	https://pages.stern.nyu.edu/~lpederse/papers/ValMomEverywhere.pdf
+#' Copyright ©2013 Cliff Asness, Tobias Moskowitz, and Lasse Heje Pedersen
+#'
+#' @docType data
+#'
+#' @usage data('VME.Portfolios.Monthly')
+#'
+#' @format An xts object on 1967-02-28 / 2024-04-30 containing: Data: 687 entries, 48 total columns
+#' \itemize{
+#'  \item \strong{Date:} Date, monthly periodicity. Formatted in as a Date object in %Y-%m-%d format.
+#'  \item \strong{VAL1US:} Excess returns of Value US equities in the lowest group. 
+#'  \item \strong{VAL2US:} Excess returns of Value US equities in the medium group. 
+#'  \item \strong{VAL3US:} Excess returns of Value US equities in the large group. 
+#'  \item \strong{MOM1US:} Excess returns of Momentum US equities in the lowest group. 
+#'  \item \strong{MOM2US:} Excess returns of Momentum US equities in the medium group. 
+#'  \item \strong{MOM3US:} Excess returns of Momentum US equities in the large group. 
+#'  \item \strong{VAL1UK:} Excess returns of Value UK equities in the lowest group. 
+#'  \item \strong{VAL2UK:} Excess returns of Value UK equities in the medium group. 
+#'  \item \strong{VAL2UK:} Excess returns of Value UK equities in the large group. 
+#'  \item \strong{MOM1UK:} Excess returns of Momentum UK equities in the lowest group. 
+#'  \item \strong{MOM2UK:} Excess returns of Momentum UK equities in the medium group. 
+#'  \item \strong{MOM3UK:} Excess returns of Momentum UK equities in the large group. 
+#'  \item \strong{VAL1EU:} Excess returns of Value Continental Europe equities in the lowest group. 
+#'  \item \strong{VAL2EU:} Excess returns of Value Continental Europe equities in the medium group. 
+#'  \item \strong{VAL3EU:} Excess returns of Value Continental Europe equities in the large group. 
+#'  \item \strong{MOM1EU:} Excess returns of Momentum Continental Europe equities in the lowest group. 
+#'  \item \strong{MOM2EU:} Excess returns of Momentum Continental Europe equities in the medium group. 
+#'  \item \strong{MOM3EU:} Excess returns of Momentum Continental Europe equities in the large group. 
+#'  \item \strong{VAL1JP:} Excess returns of Value Japan equities in the lowest group. 
+#'  \item \strong{VAL2JP:} Excess returns of Value Japan equities in the medium group. 
+#'  \item \strong{VAL3JP:} Excess returns of Value Japan equities in the large group. 
+#'  \item \strong{MOM1JP:} Excess returns of Momentum Japan equities in the lowest group. 
+#'  \item \strong{MOM2JP:} Excess returns of Momentum Japan equities in the medium group. 
+#'  \item \strong{MOM3JP:} Excess returns of Momentum Japan equities in the large group.
+#'  \item \strong{VAL1.VME.EQ:} Excess returns of Value equities indices in the lowest group. 
+#'  \item \strong{VALs.VME.EQ:} Excess returns of Value equities indices in the medium group. 
+#'  \item \strong{VAL3.VME.EQ:} Excess returns of Value equities indices in the large group. 
+#'  \item \strong{MOM1.VME.EQ:} Excess returns of Momentum equities indices in the lowest group. 
+#'  \item \strong{MOM2.VME.EQ:} Excess returns of Momentum equities indices in the medium group. 
+#'  \item \strong{MOM3.VME.EQ:} Excess returns of Momentum equities indices in the large group. 
+#'  \item \strong{VAL1.VME.FX:} Excess returns of Value Currencies in the lowest group. 
+#'  \item \strong{VAL2.VME.FX:} Excess returns of Value Currencies in the medium group. 
+#'  \item \strong{VAL3.VME.FX:} Excess returns of Value Currencies in the large group. 
+#'  \item \strong{MOM1.VME.FX:} Excess returns of Momentum Currencies in the lowest group. 
+#'  \item \strong{MOM2.VME.FX:} Excess returns of Momentum Currencies in the medium group. 
+#'  \item \strong{MOM3.VME.FX:} Excess returns of Momentum Currencies in the large group.
+#'  \item \strong{VAL1.VME.FI:} Excess returns of Value Fixed Income in the lowest group. 
+#'  \item \strong{VAL2.VME.FI:} Excess returns of Value Fixed Income in the medium group. 
+#'  \item \strong{VAL3.VME.FI:} Excess returns of Value Fixed Income in the large group. 
+#'  \item \strong{MOM1.VME.FI:} Excess returns of Momentum Fixed Income in the lowest group. 
+#'  \item \strong{MOM2.VME.FI:} Excess returns of Momentum Fixed Income in the medium group. 
+#'  \item \strong{MOM3.VME.FI:} Excess returns of Momentum Fixed Income in the large group.
+#'  \item \strong{VAL1.VME.COM:} Excess returns of Value Fixed Income in the lowest group. 
+#'  \item \strong{VAL2.VME.COM:} Excess returns of Value Fixed Income in the medium group. 
+#'  \item \strong{VAL3.VME.COM:} Excess returns of Value Fixed Income in the large group. 
+#'  \item \strong{MOM1.VME.COM:} Excess returns of Momentum Fixed Income in the lowest group. 
+#'  \item \strong{MOM2.VME.COM:} Excess returns of Momentum Fixed Income in the medium group. 
+#'  \item \strong{MOM3.VME.COM:} Excess returns of Momentum Fixed Income in the large group.
+#' }
+#' @source
+#'
+#' 
+#'
+#' **Past performance of the Information is not an indication of future results.**
+#'
+#' \url{https://www.aqr.com/Insights/Datasets/Value-and-Momentum-Everywhere-Portfolios-Monthly}
+#' @examples  str(VME.Portfolios)
+"VME.Portfolios"
