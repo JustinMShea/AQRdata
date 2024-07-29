@@ -238,10 +238,6 @@
 #'  marketing document.
 #'
 #' \url{https://images.aqr.com/-/media/AQR/Documents/Insights/Data-Sets/Century-of-Factor-Premia-Monthly.xlsx}
-<<<<<<< HEAD:R/CFP.R
 #' @examples  str(CFP)
 "CFP"
-=======
-#' @examples  str('Credit_Factor_Premia')
-"Credit_Factor_Premia"
->>>>>>> b4db1374800c662f8762894e15bfe41d780ec459:R/Credit_Factor_Premia.R
+

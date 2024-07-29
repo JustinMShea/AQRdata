@@ -98,12 +98,8 @@
 #' **Past performance of the Information is not an indication of future results.**
 #'
 #' \url{https://images.aqr.com/-/media/AQR/Documents/Insights/Data-Sets/Commodities-for-the-Long-Run-Original-Paper-Data.xlsx}
-<<<<<<< HEAD:R/COMLR_orig.R
 #' @examples  str(COMLR)
 "COMLR"
-=======
-#' @examples  str(AQR_Commodity_og)
-"AQR_Commodity_og"
->>>>>>> b4db1374800c662f8762894e15bfe41d780ec459:R/AQR_Commodity_og.R
+
 
 
