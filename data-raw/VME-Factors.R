@@ -23,10 +23,7 @@ colnames(VME.Factors) <- variable.names
 # Convert variables to "numeric" and dates to "Date"
 VME.Factors.vars <- colnames(VME.Factors) != 'DATE'
 VME.Factors[, VME.Factors.vars] <- apply(VME.Factors[, VME.Factors.vars], 2, as.numeric)
-VME.Factors$DATE <- as.Date.character(VME.Factors$DATE, "%m/%d/%Y")
 
-# Remove empty cells
-VME.Factors <- zoo::na.trim(VME.Factors)
 
 # convert to xts
 VME.Factors <- xts::xts(VME.Factors[,-1], order.by = VME.Factors$DATE)
@@ -38,6 +35,6 @@ rm(AQR.VME.Factors.url,
 )
 
 # Save to sandbox if needed
-save(VME.Factors, file = paste0("data/VME_Factors.RData"), compress = "xz", compression_level = 9)
+save(VME.Factors, file = paste0("data/VME.Factors.RData"), compress = "xz", compression_level = 9)
 
 

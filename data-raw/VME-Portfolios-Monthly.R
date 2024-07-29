@@ -23,8 +23,6 @@ VME.Portfolios.vars <- colnames(VME.Portfolios) != 'DATE'
 VME.Portfolios[, VME.Portfolios.vars] <- apply(VME.Portfolios[, VME.Portfolios.vars], 2, as.numeric)
 VME.Portfolios$DATE <- as.Date.character(VME.Portfolios$DATE, "%m/%d/%Y")
 
-# Remove empty cells
-VME.Portfolios <- zoo::na.trim(VME.Portfolios)
 
 # convert to xts
 VME.Portfolios <- xts::xts(VME.Portfolios[,-1], order.by = VME.Portfolios$DATE)
@@ -36,6 +34,6 @@ rm(VME.Portfolios.url,
 )
 
 # Save to sandbox if needed
-save(VME.Portfolios, file = paste0("data/VME_Portfolios_Monthly.RData"), compress = "xz", compression_level = 9)
+save(VME.Portfolios, file = paste0("data/VME.Portfolios.Monthly.RData"), compress = "xz", compression_level = 9)
 
 

@@ -17,16 +17,11 @@ variable.names <- sub("^VAL$", replacement = "VAL.EVR", variable.names)
 variable.names <- sub("^MOM$", replacement = "MOM.EVR", variable.names)
 colnames(VME_Factors_orig) <- variable.names
 
-## Remove NA's
-# VME_Factors_orig <- zoo::na.trim(VME_Factors_orig)
 
 ## Convert to xts
 VME_Factors_orig <- xts::xts(VME_Factors_orig[,-1], order.by = as.yearmon(VME_Factors_orig$DATE))
 
-## Remove unused variables
-rm(AQR.VME.Factors.orig.url,
-   variable.names
-)
 
 # Save to sandbox if needed
-save(VME_Factors_orig, file = paste0("data/VME_Factors_orig.RData"), compress = "xz", compression_level = 9)
+save(VME_Factors_orig, file = paste0("data/VME.Factors.orig.RData"), compress = "xz", compression_level = 9)
+
