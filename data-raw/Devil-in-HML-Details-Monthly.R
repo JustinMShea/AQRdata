@@ -65,7 +65,7 @@ HML.DEV <- openxlsx::read.xlsx(AQR_HML_Devil_url, sheet=1, startRow=19, colNames
       str(HML.DEV.MKT)
       
       ## SAVE MKT 
-#      save(HML.DEV.MKT, file = paste0("data/HML.DEV.MKT.Monthly.RData"), compress = "xz", compression_level = 9)
+      save(HML.DEV.MKT, file = paste0("data/HML.DEV.MKT.Monthly.RData"), compress = "xz", compression_level = 9)
 
 
 ###
@@ -96,7 +96,7 @@ HML.DEV <- openxlsx::read.xlsx(AQR_HML_Devil_url, sheet=1, startRow=19, colNames
       str(HML.DEV.SMB)
       
       # SAVE SMB 
-#      save(HML.DEV.SMB, file = paste0("data/HML.DEV.SMB.Monthly.RData"), compress = "xz", compression_level = 9)
+      save(HML.DEV.SMB, file = paste0("data/HML.DEV.SMB.Monthly.RData"), compress = "xz", compression_level = 9)
 
       
 ###
@@ -126,7 +126,7 @@ HML.DEV <- openxlsx::read.xlsx(AQR_HML_Devil_url, sheet=1, startRow=19, colNames
       str(HML.DEV.HML)
       
       # SAVE HML 
-#      save(HML.DEV.HML, file = paste0("data/HML.DEV.HML.Monthly.RData"), compress = "xz", compression_level = 9)
+      save(HML.DEV.HML, file = paste0("data/HML.DEV.HML.Monthly.RData"), compress = "xz", compression_level = 9)
     
       
 ###      
@@ -158,7 +158,7 @@ HML.DEV <- openxlsx::read.xlsx(AQR_HML_Devil_url, sheet=1, startRow=19, colNames
       str(HML.DEV.UMD)
       
       # SAVE UMD
-#      save(HML.DEV.UMB, file = paste0("data/HML.DEV.UMB.Monthly.RData"), compress = "xz", compression_level = 9)
+      save(HML.DEV.UMD, file = paste0("data/HML.DEV.UMB.Monthly.RData"), compress = "xz", compression_level = 9)
 
 ###
 ###   6. Total Market Value of Equity (ME) factors, lagged 1 month (Billion USD)
@@ -187,7 +187,7 @@ HML.DEV <- openxlsx::read.xlsx(AQR_HML_Devil_url, sheet=1, startRow=19, colNames
       str(HML.DEV.ME_1)
        
       # SAVE ME_1 
-#      save(HML.DEV.ME_1, file = paste0("data/HML.DEV.ME_1.Monthly.RData"), compress = "xz", compression_level = 9)
+     save(HML.DEV.ME_1, file = paste0("data/HML.DEV.ME_1.Monthly.RData"), compress = "xz", compression_level = 9)
 
 
 ###
@@ -214,7 +214,7 @@ HML.DEV <- openxlsx::read.xlsx(AQR_HML_Devil_url, sheet=1, startRow=19, colNames
       str(HML.DEV.RFR)
       
       # SAVE RFR
-#      save(HML.DEV.RFR, file = paste0("data/HML.DEV.RFR.Monthly.RData"), compress = "xz", compression_level = 9)
+      save(HML.DEV.RFR, file = paste0("data/HML.DEV.RFR.Monthly.RData"), compress = "xz", compression_level = 9)
 
 
 ## Add script to merge factor data by country below ##
