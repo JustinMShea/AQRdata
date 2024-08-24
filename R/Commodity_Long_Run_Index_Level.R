@@ -33,7 +33,7 @@
 #' 
 #' @docType data
 #'
-#' @usage data('AQR_commodity')
+#' @usage data('Commodities.Long.Run.Index.Level')
 #'
 #' @format A data.frame with 1766 observations on 12 variables:
 #' \itemize{
@@ -126,7 +126,7 @@
 #' **Past performance of the Information is not an indication of future results.**
 #' 
 #' \url{https://www.aqr.com/Insights/Datasets/Commodities-for-the-Long-Run-Index-Level-Data-Monthly}
-#' @examples  str(AQR_commodity)
-"AQR_commodity"
+#' @examples  str(Commodities.Long.Run.Index.Level)
+"Commodities.Long.Run.Index.Level"
 
 

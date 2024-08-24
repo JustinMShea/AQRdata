@@ -130,7 +130,7 @@
 #' **Past performance of the Information is not an indication of future results.**
 #' 
 #' \url{https://www.aqr.com/Insights/Datasets/Betting-Against-Beta-Equity-Factors-Daily}
-#' @examples  str(BAB.Factors)
+#' @examples  str(BAB.Factors.Daily) 
 "BAB.Factors.Daily"
 
 

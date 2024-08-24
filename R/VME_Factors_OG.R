@@ -26,7 +26,7 @@
 #'
 #' @docType data
 #'
-#' @usage data('VME_Factors_orig')
+#' @usage data('VME.Factors.orig')
 #'
 #' @format An xts object on Jan 1972 / Jul 2011 containing: Data: 475 entries, 22 total columns
 #' \itemize{
@@ -111,5 +111,5 @@
 #' **Past performance of the Information is not an indication of future results.**
 #'
 #' \url{https://www.aqr.com/Insights/Datasets/Value-and-Momentum-Everywhere-Factors-Monthly}
-#' @examples  str(VME_Factors_orig)
-"VME_Factors_orig"
+#' @examples  str(VME.Factors.orig)
+"VME.Factors.orig"

@@ -122,8 +122,8 @@
 #' 
 #' **Past performance of the Information is not an indication of future results.**
 #' 
-#' \url{https://www.aqr.com/Insights/Datasets/Quality-Minus-Junk-Factors-Monthly
-#' @examples  str(QMJ.Factors)
+#' \url{https://www.aqr.com/Insights/Datasets/Quality-Minus-Junk-Factors-Monthly}
+#' @examples  str(QMJ.Factors.Monthly)
 "QMJ.Factors.Monthly"
 
 

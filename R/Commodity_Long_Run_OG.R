@@ -33,7 +33,7 @@
 #'
 #' @docType data
 #'
-#' @usage data('AQR_Commodity_og')
+#' @usage data('Commodities.Long.Run.OG') 
 #'
 #' @format A data.frame with 1667 observations on 11 variables:
 #' \itemize{
@@ -98,8 +98,8 @@
 #' **Past performance of the Information is not an indication of future results.**
 #'
 #' \url{https://images.aqr.com/-/media/AQR/Documents/Insights/Data-Sets/Commodities-for-the-Long-Run-Original-Paper-Data.xlsx}
-#' @examples  str(COMLR)
-"COMLR"
+#' @examples  str(Commodities.Long.Run.OG)
+"Commodities.Long.Run.OG"
 
 
 

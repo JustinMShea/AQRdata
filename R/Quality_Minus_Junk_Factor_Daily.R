@@ -125,7 +125,7 @@
 #' **Past performance of the Information is not an indication of future results.**
 #' 
 #' \url{https://www.aqr.com/Insights/Datasets/Quality-Minus-Junk-Factors-Daily}
-#' @examples  str(QMJ.Factors)
+#' @examples  str(QMJ.Factors.Daily)
 "QMJ.Factors.Daily"
 
 

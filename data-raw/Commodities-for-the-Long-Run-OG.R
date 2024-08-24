@@ -53,9 +53,9 @@ COMLR$INFL.STATE <- ifelse(COMLR$INFL.STATE=="Inflation Down", -1, 1)
 COMLR[, 2:ncol(COMLR)] <- apply(COMLR[, 2:ncol(COMLR)], 2, as.numeric)
 
 COMLR <- xts::xts(COMLR[, -1], order.by = COMLR$DATE)
-AQR_Commodity_og <- COMLR
+Commodities.Long.Run.OG <- COMLR
 ## Remove unused variables
 rm(AQR.COMLR.url, COMLR.raw, COMLR, tmp)
 
 # Save to sandbox if needed
-save(AQR_Commodity_og, file = paste0("data/Commodities.Long.Run.OG.RData"), compress = "xz", compression_level = 9)
+save(Commodities.Long.Run.OG, file = paste0("data/Commodities.Long.Run.OG.RData"), compress = "xz", compression_level = 9)

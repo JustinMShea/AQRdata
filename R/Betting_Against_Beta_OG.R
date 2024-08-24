@@ -172,7 +172,7 @@
 #' **Past performance of the Information is not an indication of future results.**
 #' 
 #' \url{https://www.aqr.com/Insights/Datasets/Betting-Against-Beta-Original-Paper-Data}
-#' @examples  str(BAB.Factors)
+#' @examples  str(BAB.Factors.OG)
 "BAB.Factors.OG"
 
 

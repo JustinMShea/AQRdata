@@ -89,6 +89,6 @@
 #' **Past performance of the Information is not an indication of future results.**
 #'
 #' \url{https://www.aqr.com/Insights/Datasets/Time-Series-Momentum-Original-Paper-Data}
-#' @examples  str(TSM)
+#' @examples  str(TSM.OG)
 "TSM.OG"
 

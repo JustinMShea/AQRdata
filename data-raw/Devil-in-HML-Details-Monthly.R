@@ -8,11 +8,11 @@
 
 # Download in R environment
 AQR_HML_Devil_url <- "https://www.aqr.com/-/media/AQR/Documents/Insights/Data-Sets/The-Devil-in-HMLs-Details-Factors-Monthly.xlsx"
-HML.DEV <- openxlsx::read.xlsx(AQR_HML_Devil_url, sheet=1, startRow=19, colNames=TRUE, detectDates = TRUE)
+HML.DEV.Monthly <- openxlsx::read.xlsx(AQR_HML_Devil_url, sheet=1, startRow=19, colNames=TRUE, detectDates = TRUE)
 
 
 ###   Clean up
-      variable.names <- colnames(HML.DEV)
+      variable.names <- colnames(HML.DEV.Monthly)
       
       # New column names
       new_colnames <- c("DATE", "EQ.AUS", "EQ.AUT", "EQ.BEL", "EQ.CAN", "EQ.CHE", "EQ.DEU", "EQ.DNK",
@@ -21,29 +21,29 @@ HML.DEV <- openxlsx::read.xlsx(AQR_HML_Devil_url, sheet=1, startRow=19, colNames
                         "EQ.USA", "AEP.GL", "AEP.GLUS", "AEP.EU", "AEP.NA", "AEP.PA")
       
       # Assigning the new column names to the data frame
-      colnames(HML.DEV) <- new_colnames
+      colnames(HML.DEV.Monthly) <- new_colnames
       
       # Convert the Date column to character and then to date format YYYY-MM
-      HML.DEV$DATE <- gsub("/", "", HML.DEV$DATE)
-      HML.DEV$DATE <- as.Date(paste0(substr(HML.DEV$DATE, 5, 8), "-", substr(HML.DEV$DATE, 1, 2), "-", substr(HML.DEV$DATE, 3, 4)))
+      HML.DEV.Monthly$DATE <- gsub("/", "", HML.DEV.Monthly$DATE)
+      HML.DEV.Monthly$DATE <- as.Date(paste0(substr(HML.DEV.Monthly$DATE, 5, 8), "-", substr(HML.DEV.Monthly$DATE, 1, 2), "-", substr(HML.DEV.Monthly$DATE, 3, 4)))
       
       # Convert the data.frame to xts object, using the Date column as the index
-      HML.DEV <- xts::xts(HML.DEV[, -1], order.by = HML.DEV$DATE)
+      HML.DEV.Monthly <- xts::xts(HML.DEV.Monthly[, -1], order.by = HML.DEV.Monthly$DATE)
       
       # Check the structure of the xts object
-      str(HML.DEV)
+      str(HML.DEV.Monthly)
       
       ### SAVE 
-      save(HML.DEV, file = paste0("data/HML.DEV.Monthly.RData"), compress = "xz", compression_level = 9)
+      save(HML.DEV.Monthly, file = paste0("data/HML.DEV.Monthly.RData"), compress = "xz", compression_level = 9)
 
 
 
 ###
 ###   2. MKT
-      HML.DEV.MKT <- openxlsx::read.xlsx(AQR_HML_Devil_url, sheet=5, startRow=19, colNames=TRUE, detectDates = TRUE)
+      HML.DEV.MKT.Monthly <- openxlsx::read.xlsx(AQR_HML_Devil_url, sheet=5, startRow=19, colNames=TRUE, detectDates = TRUE)
       
       ## Clean up
-      variable.names <- colnames(HML.DEV.MKT)
+      variable.names <- colnames(HML.DEV.MKT.Monthly)
       
       # New column names
       new_colnames <- c("DATE", "EQ.AUS", "EQ.AUT", "EQ.BEL", "EQ.CAN", "EQ.CHE", "EQ.DEU", "EQ.DNK",
@@ -52,28 +52,28 @@ HML.DEV <- openxlsx::read.xlsx(AQR_HML_Devil_url, sheet=1, startRow=19, colNames
                         "EQ.USA", "AEP.GL", "AEP.GLUS", "AEP.EU", "AEP.NA", "AEP.PA")
       
       # Assigning the new column names to the data frame
-      colnames(HML.DEV.MKT) <- new_colnames
+      colnames(HML.DEV.MKT.Monthly) <- new_colnames
       
       # Convert the Date column to character and then to date format YYYY-MM
-      HML.DEV.MKT$DATE <- gsub("/", "", HML.DEV.MKT$DATE)
-      HML.DEV.MKT$DATE <- as.Date(paste0(substr(HML.DEV.MKT$DATE, 5, 8), "-", substr(HML.DEV.MKT$DATE, 1, 2), "-", substr(HML.DEV.MKT$DATE, 3, 4)))
+      HML.DEV.MKT.Monthly$DATE <- gsub("/", "", HML.DEV.MKT.Monthly$DATE)
+      HML.DEV.MKT.Monthly$DATE <- as.Date(paste0(substr(HML.DEV.MKT.Monthly$DATE, 5, 8), "-", substr(HML.DEV.MKT.Monthly$DATE, 1, 2), "-", substr(HML.DEV.MKT.Monthly$DATE, 3, 4)))
       
       # Convert the data.frame to xts object, using the Date column as the index
-      HML.DEV.MKT <- xts::xts(HML.DEV.MKT[, -1], order.by = HML.DEV.MKT$DATE)
+      HML.DEV.MKT.Monthly <- xts::xts(HML.DEV.MKT.Monthly[, -1], order.by = HML.DEV.MKT.Monthly$DATE)
       
       # Check the structure of the xts object
-      str(HML.DEV.MKT)
+      str(HML.DEV.MKT.Monthly)
       
       ## SAVE MKT 
-      save(HML.DEV.MKT, file = paste0("data/HML.DEV.MKT.Monthly.RData"), compress = "xz", compression_level = 9)
+      save(HML.DEV.MKT.Monthly, file = paste0("data/HML.DEV.MKT.Monthly.RData"), compress = "xz", compression_level = 9)
 
 
 ###
 ###   3. SMB 
-      HML.DEV.SMB <- openxlsx::read.xlsx(AQR_HML_Devil_url, sheet=6, startRow=19, colNames=TRUE, detectDates = TRUE)
+      HML.DEV.SMB.Monthly <- openxlsx::read.xlsx(AQR_HML_Devil_url, sheet=6, startRow=19, colNames=TRUE, detectDates = TRUE)
       
       ## Clean up
-      variable.names <- colnames(HML.DEV.SMB)
+      variable.names <- colnames(HML.DEV.SMB.Monthly)
       
       # New column names
       new_colnames <- c("DATE", "EQ.AUS", "EQ.AUT", "EQ.BEL", "EQ.CAN", "EQ.CHE", "EQ.DEU", "EQ.DNK",
@@ -83,28 +83,28 @@ HML.DEV <- openxlsx::read.xlsx(AQR_HML_Devil_url, sheet=1, startRow=19, colNames
       
       
       # Assigning the new column names to the data frame
-      colnames(HML.DEV.SMB) <- new_colnames
+      colnames(HML.DEV.SMB.Monthly) <- new_colnames
       
       # Convert the Date column to character and then to date format YYYY-MM
-      HML.DEV.SMB$DATE <- gsub("/", "", HML.DEV.SMB$DATE)
-      HML.DEV.SMB$DATE <- as.Date(paste0(substr(HML.DEV.SMB$DATE, 5, 8), "-", substr(HML.DEV.SMB$DATE, 1, 2), "-", substr(HML.DEV.SMB$DATE, 3, 4)))
+      HML.DEV.SMB.Monthly$DATE <- gsub("/", "", HML.DEV.SMB.Monthly$DATE)
+      HML.DEV.SMB.Monthly$DATE <- as.Date(paste0(substr(HML.DEV.SMB.Monthly$DATE, 5, 8), "-", substr(HML.DEV.SMB.Monthly$DATE, 1, 2), "-", substr(HML.DEV.SMB.Monthly$DATE, 3, 4)))
       
       # Convert the data.frame to xts object, using the Date column as the index
-      HML.DEV.SMB <- xts::xts(HML.DEV.SMB[, -1], order.by = HML.DEV.SMB$DATE)
+      HML.DEV.SMB.Monthly <- xts::xts(HML.DEV.SMB.Monthly[, -1], order.by = HML.DEV.SMB.Monthly$DATE)
       
       # Check the structure of the xts object
-      str(HML.DEV.SMB)
+      str(HML.DEV.SMB.Monthly)
       
       # SAVE SMB 
-      save(HML.DEV.SMB, file = paste0("data/HML.DEV.SMB.Monthly.RData"), compress = "xz", compression_level = 9)
+      save(HML.DEV.SMB.Monthly, file = paste0("data/HML.DEV.SMB.Monthly.RData"), compress = "xz", compression_level = 9)
 
       
 ###
 ###   4. HML
-      HML.DEV.HML <- openxlsx::read.xlsx(AQR_HML_Devil_url, sheet=7, startRow=19, colNames=TRUE, detectDates = TRUE)
+      HML.DEV.HML.Monthly <- openxlsx::read.xlsx(AQR_HML_Devil_url, sheet=7, startRow=19, colNames=TRUE, detectDates = TRUE)
       
       ## Clean up
-      variable.names <- colnames(HML.DEV.HML)
+      variable.names <- colnames(HML.DEV.HML.Monthly)
       
       # New column names
       new_colnames <- c("DATE", "EQ.AUS", "EQ.AUT", "EQ.BEL", "EQ.CAN", "EQ.CHE", "EQ.DEU", "EQ.DNK",
@@ -113,28 +113,28 @@ HML.DEV <- openxlsx::read.xlsx(AQR_HML_Devil_url, sheet=1, startRow=19, colNames
                         "EQ.USA", "AEP.GL", "AEP.GLUS", "AEP.EU", "AEP.NA", "AEP.PA")
       
       # Assigning the new column names to the data frame
-      colnames(HML.DEV.HML) <- new_colnames
+      colnames(HML.DEV.HML.Monthly) <- new_colnames
       
       # Convert the Date column to character and then to date format YYYY-MM
-      HML.DEV.HML$DATE <- gsub("/", "", HML.DEV.HML$DATE)
-      HML.DEV.HML$DATE <- as.Date(paste0(substr(HML.DEV.HML$DATE, 5, 8), "-", substr(HML.DEV.HML$DATE, 1, 2), "-", substr(HML.DEV.HML$DATE, 3, 4)))
+      HML.DEV.HML.Monthly$DATE <- gsub("/", "", HML.DEV.HML.Monthly$DATE)
+      HML.DEV.HML.Monthly$DATE <- as.Date(paste0(substr(HML.DEV.HML.Monthly$DATE, 5, 8), "-", substr(HML.DEV.HML.Monthly$DATE, 1, 2), "-", substr(HML.DEV.HML.Monthly$DATE, 3, 4)))
       
       # Convert the data.frame to xts object, using the Date column as the index
-      HML.DEV.HML <- xts::xts(HML.DEV.HML[, -1], order.by = HML.DEV.HML$DATE)
+      HML.DEV.HML.Monthly <- xts::xts(HML.DEV.HML.Monthly[, -1], order.by = HML.DEV.HML.Monthly$DATE)
       
       # Check the structure of the xts object
-      str(HML.DEV.HML)
+      str(HML.DEV.HML.Monthly)
       
       # SAVE HML 
-      save(HML.DEV.HML, file = paste0("data/HML.DEV.HML.Monthly.RData"), compress = "xz", compression_level = 9)
+      save(HML.DEV.HML.Monthly, file = paste0("data/HML.DEV.HML.Monthly.RData"), compress = "xz", compression_level = 9)
     
       
 ###      
 ###   5. Up Minus Down (UMD) factors
-      HML.DEV.UMD <- openxlsx::read.xlsx(AQR_HML_Devil_url, sheet=8, startRow=19, colNames=TRUE, detectDates = TRUE)
+      HML.DEV.UMD.Monthly <- openxlsx::read.xlsx(AQR_HML_Devil_url, sheet=8, startRow=19, colNames=TRUE, detectDates = TRUE)
       
       ## Clean up
-      variable.names <- colnames(HML.DEV.UMD)
+      variable.names <- colnames(HML.DEV.UMD.Monthly)
       
       # New column names
       new_colnames <- c("DATE", "EQ.AUS", "EQ.AUT", "EQ.BEL", "EQ.CAN", "EQ.CHE", "EQ.DEU", "EQ.DNK",
@@ -145,27 +145,27 @@ HML.DEV <- openxlsx::read.xlsx(AQR_HML_Devil_url, sheet=1, startRow=19, colNames
       
       
       # Assigning the new column names to the data frame
-      colnames(HML.DEV.UMD) <- new_colnames
+      colnames(HML.DEV.UMD.Monthly) <- new_colnames
       
       # Convert the Date column to character and then to date format YYYY-MM
-      HML.DEV.UMD$DATE <- gsub("/", "", HML.DEV.UMD$DATE)
-      HML.DEV.UMD$DATE <- as.Date(paste0(substr(HML.DEV.UMD$DATE, 5, 8), "-", substr(HML.DEV.UMD$DATE, 1, 2), "-", substr(HML.DEV.UMD$DATE, 3, 4)))
+      HML.DEV.UMD.Monthly$DATE <- gsub("/", "", HML.DEV.UMD.Monthly$DATE)
+      HML.DEV.UMD.Monthly$DATE <- as.Date(paste0(substr(HML.DEV.UMD.Monthly$DATE, 5, 8), "-", substr(HML.DEV.UMD.Monthly$DATE, 1, 2), "-", substr(HML.DEV.UMD.Monthly$DATE, 3, 4)))
       
       # Convert the data.frame to xts object, using the Date column as the index
-      HML.DEV.UMD <- xts::xts(HML.DEV.UMD[, -1], order.by = HML.DEV.UMD$DATE)
+      HML.DEV.UMD.Monthly <- xts::xts(HML.DEV.UMD.Monthly[, -1], order.by = HML.DEV.UMD.Monthly$DATE)
       
       # Check the structure of the xts object
-      str(HML.DEV.UMD)
+      str(HML.DEV.UMD.Monthly)
       
       # SAVE UMD
-      save(HML.DEV.UMD, file = paste0("data/HML.DEV.UMB.Monthly.RData"), compress = "xz", compression_level = 9)
+      save(HML.DEV.UMD.Monthly, file = paste0("data/HML.DEV.UMD.Monthly.RData"), compress = "xz", compression_level = 9)
 
 ###
 ###   6. Total Market Value of Equity (ME) factors, lagged 1 month (Billion USD)
-      HML.DEV.ME_1 <- openxlsx::read.xlsx(AQR_HML_Devil_url, sheet=9, startRow=19, colNames=TRUE, detectDates = TRUE)
+      HML.DEV.ME_1.Monthly <- openxlsx::read.xlsx(AQR_HML_Devil_url, sheet=9, startRow=19, colNames=TRUE, detectDates = TRUE)
       
       ## Clean up
-      variable.names <- colnames(HML.DEV.ME_1)
+      variable.names <- colnames(HML.DEV.ME_1.Monthly)
       
       # New column names
       new_colnames <- c("DATE", "EQ.AUS", "EQ.AUT", "EQ.BEL", "EQ.CAN", "EQ.CHE", "EQ.DEU", "EQ.DNK",
@@ -174,47 +174,47 @@ HML.DEV <- openxlsx::read.xlsx(AQR_HML_Devil_url, sheet=1, startRow=19, colNames
                         "EQ.USA", "AEP.GL", "AEP.GLUS", "AEP.EU", "AEP.NA", "AEP.PA")
       
       # Assigning the new column names to the data frame
-      colnames(HML.DEV.ME_1) <- new_colnames
+      colnames(HML.DEV.ME_1.Monthly) <- new_colnames
       
       # Convert the Date column to character and then to date format YYYY-MM
-      HML.DEV.ME_1$DATE <- gsub("/", "", HML.DEV.ME_1$DATE)
-      HML.DEV.ME_1$DATE <- as.Date(paste0(substr(HML.DEV.ME_1$DATE, 5, 8), "-", substr(HML.DEV.ME_1$DATE, 1, 2), "-", substr(HML.DEV.ME_1$DATE, 3, 4)))
+      HML.DEV.ME_1.Monthly$DATE <- gsub("/", "", HML.DEV.ME_1.Monthly$DATE)
+      HML.DEV.ME_1.Monthly$DATE <- as.Date(paste0(substr(HML.DEV.ME_1.Monthly$DATE, 5, 8), "-", substr(HML.DEV.ME_1.Monthly$DATE, 1, 2), "-", substr(HML.DEV.ME_1.Monthly$DATE, 3, 4)))
       
       # Convert the data.frame to xts object, using the Date column as the index
-      HML.DEV.ME_1 <- xts::xts(HML.DEV.ME_1[, -1], order.by = HML.DEV.ME_1$DATE)
+      HML.DEV.ME_1.Monthly <- xts::xts(HML.DEV.ME_1.Monthly[, -1], order.by = HML.DEV.ME_1.Monthly$DATE)
       
-      # Check the structure of the xts objectsave(HML.DEV.ME_1, file = paste0("data/HML.Devil.HML.DEV.ME_1.Monthly.RData"), compress = "xz", compression_level = 9)
-      str(HML.DEV.ME_1)
+      # Check the structure of the xts objectsave(HML.DEV.ME_1.Monthly, file = paste0("data/HML.Devil.HML.DEV.ME_1.Monthly.Monthly.RData"), compress = "xz", compression_level = 9)
+      str(HML.DEV.ME_1.Monthly)
        
       # SAVE ME_1 
-     save(HML.DEV.ME_1, file = paste0("data/HML.DEV.ME_1.Monthly.RData"), compress = "xz", compression_level = 9)
+     save(HML.DEV.ME_1.Monthly, file = paste0("data/HML.DEV.ME_1.Monthly.RData"), compress = "xz", compression_level = 9)
 
 
 ###
 ###   7. Risk Free Rate 
-      HML.DEV.RFR <- openxlsx::read.xlsx(AQR_HML_Devil_url, sheet=10, startRow=19, colNames=TRUE, detectDates = TRUE)
+      HML.DEV.RFR.Monthly <- openxlsx::read.xlsx(AQR_HML_Devil_url, sheet=10, startRow=19, colNames=TRUE, detectDates = TRUE)
       
       ## Clean up
-      variable.names <- colnames(HML.DEV.RFR)
+      variable.names <- colnames(HML.DEV.RFR.Monthly)
       
       # New column names
       new_colnames <- c("DATE", "RFR")
       
       # Assigning the new column names to the data frame
-      colnames(HML.DEV.RFR) <- new_colnames
+      colnames(HML.DEV.RFR.Monthly) <- new_colnames
       
       # Convert the Date column to character and then to date format YYYY-MM
-      HML.DEV.RFR$DATE <- gsub("/", "", HML.DEV.RFR$DATE)
-      HML.DEV.RFR$DATE <- as.Date(paste0(substr(HML.DEV.RFR$DATE, 5, 8), "-", substr(HML.DEV.RFR$DATE, 1, 2), "-", substr(HML.DEV.RFR$DATE, 3, 4)))
+      HML.DEV.RFR.Monthly$DATE <- gsub("/", "", HML.DEV.RFR.Monthly$DATE)
+      HML.DEV.RFR.Monthly$DATE <- as.Date(paste0(substr(HML.DEV.RFR.Monthly$DATE, 5, 8), "-", substr(HML.DEV.RFR.Monthly$DATE, 1, 2), "-", substr(HML.DEV.RFR.Monthly$DATE, 3, 4)))
       
       # Convert the data.frame to xts object, using the Date column as the index
-      HML.DEV.RFR <- xts::xts(HML.DEV.RFR[, -1], order.by = HML.DEV.RFR$DATE)
+      HML.DEV.RFR.Monthly <- xts::xts(HML.DEV.RFR.Monthly[, -1], order.by = HML.DEV.RFR.Monthly$DATE)
       
       # Check the structure of the xts object
-      str(HML.DEV.RFR)
+      str(HML.DEV.RFR.Monthly)
       
       # SAVE RFR
-      save(HML.DEV.RFR, file = paste0("data/HML.DEV.RFR.Monthly.RData"), compress = "xz", compression_level = 9)
+      save(HML.DEV.RFR.Monthly, file = paste0("data/HML.DEV.RFR.Monthly.RData"), compress = "xz", compression_level = 9)
 
 
 ## Add script to merge factor data by country below ##

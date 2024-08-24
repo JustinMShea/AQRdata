@@ -30,6 +30,12 @@
 #' @docType data
 #'
 #' @usage data('HML.DEV.Monthly')
+#' @usage data('HML.DEV.MKT.Monthly')
+#' @usage data('HML.DEV.SMB.Monthly')
+#' @usage data('HML.DEV.HML.Monthly')
+#' @usage data('HML.DEV.UMD.Monthly')
+#' @usage data('HML.DEV.ME_1.Monthly')
+#' @usage data('HML.DEV.RFR.Monthly')
 #'
 #' @format A xts object with 1174 observations on 29 variables:
 #' \itemize{
@@ -157,7 +163,20 @@
 #' **Past performance of the Information is not an indication of future results.**
 #' 
 #' \url{https://www.aqr.com/Insights/Datasets/The-Devil-in-HMLs-Details-Factors-Monthly}
-#' @examples  str(HML.DEV)
-"HML.DEV"
+#' @examples  str('HML.DEV.Monthly')
+"HML.DEV.Monthly"
+#' @examples  str('HML.DEV.MKT.Monthly')
+"HML.DEV.MKT.Monthly"
+#' @examples  str('HML.DEV.SMB.Monthly')
+"HML.DEV.SMB.Monthly"
+#' @examples  str('HML.DEV.HML.Monthly')
+"HML.DEV.HML.Monthly"
+#' @examples  str('HML.DEV.UMD.Monthly')
+"HML.DEV.UMD.Monthly"
+#' @examples  str('HML.DEV.ME_1.Monthly')
+"HML.DEV.ME_1.Monthly"
+#' @examples  str('HML.DEV.RFR.Monthly')
+"HML.DEV.RFR.Monthly"
+
 
 

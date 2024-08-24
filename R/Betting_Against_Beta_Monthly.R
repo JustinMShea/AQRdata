@@ -31,7 +31,7 @@
 #' 
 #' @docType data
 #'
-#' @usage data('BAB.Factors.Daily')
+#' @usage data('BAB.Factors.Monthly')
 #'
 #' @format A xts object with 1121 observations on 29 variables:
 #' \itemize{
@@ -130,7 +130,7 @@
 #' **Past performance of the Information is not an indication of future results.**
 #' 
 #' \url{https://www.aqr.com/Insights/Datasets/Betting-Against-Beta-Equity-Factors-Monthly}
-#' @examples  str(BAB.Factors)
+#' @examples  str(BAB.Factors.Monthly)
 "BAB.Factors.Monthly"
 
 
