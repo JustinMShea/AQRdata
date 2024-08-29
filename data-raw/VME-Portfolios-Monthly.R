@@ -9,31 +9,31 @@
 
 ## Download in R environment
 VME.Portfolios.url <- "https://www.aqr.com/-/media/AQR/Documents/Insights/Data-Sets/Value-and-Momentum-Everywhere-Portfolios-Monthly.xlsx"
-VME.Portfolios <- openxlsx::read.xlsx(VME.Portfolios.url, sheet=1, startRow=21, colNames=TRUE, detectDates = TRUE)
+VME.Portfolios.Monthly <- openxlsx::read.xlsx(VME.Portfolios.url, sheet=1, startRow=21, colNames=TRUE, detectDates = TRUE)
 
 ## Clean up
 
-variable.names <- colnames(VME.Portfolios)
+variable.names <- colnames(VME.Portfolios.Monthly)
 variable.names <- gsub('_', '.', variable.names)
 variable.names[1] <- "DATE"
-colnames(VME.Portfolios) <- variable.names
+colnames(VME.Portfolios.Monthly) <- variable.names
 
 # Convert variables to "numeric" and dates to "Date"
-VME.Portfolios.vars <- colnames(VME.Portfolios) != 'DATE'
-VME.Portfolios[, VME.Portfolios.vars] <- apply(VME.Portfolios[, VME.Portfolios.vars], 2, as.numeric)
-VME.Portfolios$DATE <- as.Date.character(VME.Portfolios$DATE, "%m/%d/%Y")
+VME.Portfolios.Monthly.vars <- colnames(VME.Portfolios.Monthly) != 'DATE'
+VME.Portfolios.Monthly[, VME.Portfolios.Monthly.vars] <- apply(VME.Portfolios.Monthly[, VME.Portfolios.Monthly.vars], 2, as.numeric)
+VME.Portfolios.Monthly$DATE <- as.Date.character(VME.Portfolios.Monthly$DATE, "%m/%d/%Y")
 
 
 # convert to xts
-VME.Portfolios <- xts::xts(VME.Portfolios[,-1], order.by = VME.Portfolios$DATE)
+VME.Portfolios.Monthly <- xts::xts(VME.Portfolios.Monthly[,-1], order.by = VME.Portfolios.Monthly$DATE)
 
 ## Remove unused variables
 rm(VME.Portfolios.url,
    variable.names,
-   VME.Portfolios.vars
+   VME.Portfolios.Monthly.vars
 )
 
 # Save to sandbox if needed
-save(VME.Portfolios, file = paste0("data/VME.Portfolios.Monthly.RData"), compress = "xz", compression_level = 9)
+save(VME.Portfolios.Monthly, file = paste0("data/VME.Portfolios.Monthly.RData"), compress = "xz", compression_level = 9)
 
 

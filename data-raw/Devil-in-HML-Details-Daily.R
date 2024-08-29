@@ -160,39 +160,10 @@ HML.DEV <- openxlsx::read.xlsx(AQR_HML_Devil_url, sheet=1, startRow=19, colNames
       # SAVE UMD
 #      save(HML.DEV.UMD.Daily, file = paste0("data/HML.DEV.UMD.Daily.RData"), compress = "xz", compression_level = 9)
 
-###
-###   6. Total Market Value of Equity (ME) factors, lagged 1 month (Billion USD)
-      HML.DEV.ME_1.Daily <- openxlsx::read.xlsx(AQR_HML_Devil_url, sheet=9, startRow=19, colNames=TRUE, detectDates = TRUE)
-      
-      ## Clean up
-      variable.names <- colnames(HML.DEV.ME_1.Daily)
-      
-      # New column names
-      new_colnames <- c("DATE", "EQ.AUS", "EQ.AUT", "EQ.BEL", "EQ.CAN", "EQ.CHE", "EQ.DEU", "EQ.DNK",
-                        "EQ.ESP", "EQ.FIN", "EQ.FRA", "EQ.GBR", "EQ.GRC", "EQ.HKG", "EQ.IRL", "EQ.ISR",  
-                        "EQ.ITA", "EQ.JPN", "EQ.NLD", "EQ.NOR", "EQ.NZL", "EQ.PRT", "EQ.SGP", "EQ.SWE", 
-                        "EQ.USA", "AEP.GL", "AEP.GLUS", "AEP.EU", "AEP.NA", "AEP.PA")
-      
-      # Assigning the new column names to the data frame
-      colnames(HML.DEV.ME_1.Daily) <- new_colnames
-      
-      # Convert the Date column to character and then to date format YYYY-MM
-      HML.DEV.ME_1.Daily$DATE <- gsub("/", "", HML.DEV.ME_1.Daily$DATE)
-      HML.DEV.ME_1.Daily$DATE <- as.Date(paste0(substr(HML.DEV.ME_1.Daily$DATE, 5, 8), "-", substr(HML.DEV.ME_1.Daily$DATE, 1, 2), "-", substr(HML.DEV.ME_1.Daily$DATE, 3, 4)))
-      
-      # Convert the data.frame to xts object, using the Date column as the index
-      HML.DEV.ME_1.Daily <- xts::xts(HML.DEV.ME_1.Daily[, -1], order.by = HML.DEV.ME_1.Daily$DATE)
-      
-      # Check 
-      str(HML.DEV.ME_1.Daily)
-      
-      # SAVE ME_1 
-#      save(HML.DEV.ME_1.Daily, file = paste0("data/HML.DEV.ME_1.Daily.RData"), compress = "xz", compression_level = 9)
-
 
 ###
 ###   7. Risk Free Rate 
-      HML.DEV.RFR.Daily <- openxlsx::read.xlsx(AQR_HML_Devil_url, sheet=10, startRow=19, colNames=TRUE, detectDates = TRUE)
+      HML.DEV.RFR.Daily <- openxlsx::read.xlsx(AQR_HML_Devil_url, sheet=9, startRow=19, colNames=TRUE, detectDates = TRUE)
       
       ## Clean up
       variable.names <- colnames(HML.DEV.RFR.Daily)
