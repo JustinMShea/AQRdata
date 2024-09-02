@@ -71,7 +71,7 @@ BAB.Factors.MKT.Daily <- xts::xts(BAB.Factors.MKT.Daily[, -1], order.by = BAB.Fa
 str(BAB.Factors.MKT.Daily)
 
 ## SAVE MKT 
-# save(BAB.Factors.MKT.Daily, file = paste0("data/BAB.Factors.MKT.Daily.RData"), compress = "xz", compression_level = 9)
+save(BAB.Factors.MKT.Daily, file = paste0("data/BAB.Factors.MKT.Daily.RData"), compress = "xz", compression_level = 9)
 
 
 ###
@@ -102,7 +102,7 @@ BAB.Factors.SMB.Daily <- xts::xts(BAB.Factors.SMB.Daily[, -1], order.by = BAB.Fa
 str(BAB.Factors.SMB.Daily)
 
 # SAVE SMB 
-# save(BAB.Factors.SMB.Daily, file = paste0("data/BAB.Factors.SMB.Daily.RData"), compress = "xz", compression_level = 9)
+save(BAB.Factors.SMB.Daily, file = paste0("data/BAB.Factors.SMB.Daily.RData"), compress = "xz", compression_level = 9)
 
 
 
@@ -133,7 +133,7 @@ BAB.Factors.HML.FF.Daily <- xts::xts(BAB.Factors.HML.FF.Daily[, -1], order.by = 
 str(BAB.Factors.HML.FF.Daily)
 
 # SAVE HML.FF 
-# save(BAB.Factors.HML.FF.Daily, file = paste0("data/BAB.Factors.HML.FF.Daily.RData"), compress = "xz", compression_level = 9)
+save(BAB.Factors.HML.FF.Daily, file = paste0("data/BAB.Factors.HML.FF.Daily.RData"), compress = "xz", compression_level = 9)
 
 
 ###
@@ -163,7 +163,7 @@ BAB.Factors.HML.Devil.Daily <- xts::xts(BAB.Factors.HML.Devil.Daily[, -1], order
 str(BAB.Factors.HML.Devil.Daily)
 
 # SAVE HML.Devil 
-# save(BAB.Factors.HML.Devil.Daily, file = paste0("data/BAB.Factors.HML.Devil.Daily.RData"), compress = "xz", compression_level = 9)
+save(BAB.Factors.HML.Devil.Daily, file = paste0("data/BAB.Factors.HML.Devil.Daily.RData"), compress = "xz", compression_level = 9)
 
 
 
@@ -196,7 +196,7 @@ BAB.Factors.UMD.Daily <- xts::xts(BAB.Factors.UMD.Daily[, -1], order.by = BAB.Fa
 str(BAB.Factors.UMD.Daily)
 
 # SAVE UMD
-# save(BAB.Factors.UMD.Daily, file = paste0("data/BAB.Factors.UMD.Daily.RData"), compress = "xz", compression_level = 9)
+save(BAB.Factors.UMD.Daily, file = paste0("data/BAB.Factors.UMD.Daily.RData"), compress = "xz", compression_level = 9)
 
 
 ###
@@ -223,7 +223,7 @@ BAB.Factors.RFR.Daily <- xts::xts(BAB.Factors.RFR.Daily[, -1], order.by = BAB.Fa
 str(BAB.Factors.RFR.Daily)
 
 # SAVE RFR
-# save(BAB.Factors.RFR.Daily, file = paste0("data/BAB.Factors.RFR.Daily.RData"), compress = "xz", compression_level = 9)
+save(BAB.Factors.RFR.Daily, file = paste0("data/BAB.Factors.RFR.Daily.RData"), compress = "xz", compression_level = 9)
 
 
 ## Add script to merge factor data by country below ##

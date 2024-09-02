@@ -53,6 +53,95 @@ A xts object with 802 observations on 14 variables:
 }
 }
 \source{
+Definitions 
+
+For more information, please see Asness, Frazzini and Pedersen (2014), 
+“Quality Minus Junk," http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2312432. 
+
+References
+
+Asness, Cliff, Andrea Frazziniand Lasse H. Pedersen, 2014, "Quality Minus 
+Junk," Working Paper, http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2312432.
+Differences between AQR & Fama-French Factors
+
+Sorting is a differentiator – We do a dependent sort (first sort by size and 
+then by metric), whereas French does an independent sort. 
+
+Universe is a differentiator – We use the same data sources as French (CRSP 
+and XF), and we apply filters to get close to French’s universe, but no 
+guarantee that the universes will be exactly the same.
+
+Historical refreshes are a differentiator – French refreshes his entire 
+history every month, whereas AQR has not historically done that. We’ve just 
+appended the last month to the time series. However as of late July, we 
+started refreshing the historical data monthly.
+
+Cutoffs are not a differentiator – We both use 30th and 70th NYSE percentiles 
+for high/low and the median NYSE breakpoint for small/big.
+
+Risk-free rate is not a differentiator – Both market and factor returns are 
+in excess of the risk-free rate (t-bills).
+
+Data Sources
+
+The underlying data may differ from Asness, Frazzini and Pedersen (2014), but 
+the message of the paper is preserved. Except where noted, data is updated 
+and refreshed monthly in order to utilize the best available data. The data 
+sources themselves may differ in order to allow for continued updating. In 
+addition, the underlying data may be improved and expanded as it becomes 
+available. Correlations with the original paper data are quite high.
+
+Pricing and accounting data are from the union of the CRSP tape and the 
+Compustat/XpressFeed Global database. The domestic data include all available 
+common stocks in the merged CRSP/XpressFeed data. The international data 
+include all available common stocks on the Compustat/XpressFeed Global 
+database for 23 developed markets. Individual issues are assigned to the 
+corresponding market based on the location of the primary exchange. For 
+companies traded in multiple markets we use the primary trading vehicle 
+identified by Compustat/XpressFeed. All portfolio returns are in USD and do 
+not include any currency hedging. Excess returns are above the U.S. Treasury 
+bill rate. One set of portfolios is formed in each country and aggregates are 
+computed by weighting each country's portfolio by the country's total lagged 
+(t-1) market capitalization.
+
+Disclosures
+
+The Information has been provided to you solely for information purposes and 
+does not constitute an offer or solicitation of an offer, or any advice or 
+recommendation, to purchase any securities or other financial instruments, 
+and may not be construed as such. All Information provided herein is 
+impersonal and not tailored to the needs of any person, entity or group of 
+persons. This Information is subject to further review and revision. AQR is 
+not responsible for any errors or omissions, regardless of the cause, for the 
+results obtained from the use of the Information.
+
+The Information contained herein is only as current as of the date indicated, 
+and may be superseded by subsequent market events or for other reasons. 
+Charts and graphs provided herein are for illustrative purposes only. The 
+Information has been developed internally and/or obtained from sources 
+believed to be reliable; however, AQR does not make any representation or 
+warranty, express or implied, as to the Information’s accuracy, adequacy or 
+completeness of such Information, nor does AQR recommend that the attached 
+Information serve as the basis of any investment decision. Nothing contained 
+herein constitutes investment, legal, tax or other advice, nor is it to be 
+relied on in making an investment or other decision.
+
+There can be no assurance that an investment strategy will be successful. 
+Historic market trends are not reliable indicators of actual future market 
+behavior or future performance of any particular investment which may differ 
+materially, and should not be relied upon as such. This Information should 
+not be viewed as a current or past recommendation or a solicitation of an 
+offer to buy or sell any securities or to adopt any investment strategy.
+
+Performance of all cited indices is calculated on a total-return basis with 
+dividends reinvested.
+
+The investment strategy and themes discussed herein may be unsuitable for 
+investors depending on their specific investment objectives and financial 
+situation. Please note that changes in the rate of exchange of a currency may 
+affect the value, price or income of an investment adversely.
+
+
 **Past performance of the Information is not an indication of future results.**
 
 \url{https://www.aqr.com/Insights/Datasets/Quality-Minus-Junk-Six-Portfolios-Formed-on-Size-and-Quality-Monthly}

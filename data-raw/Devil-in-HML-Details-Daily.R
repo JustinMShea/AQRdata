@@ -8,11 +8,11 @@
 
 # Download in R environment
 AQR_HML_Devil_url <- "https://www.aqr.com/-/media/AQR/Documents/Insights/Data-Sets/The-Devil-in-HMLs-Details-Factors-Daily.xlsx"
-HML.DEV <- openxlsx::read.xlsx(AQR_HML_Devil_url, sheet=1, startRow=19, colNames=TRUE, detectDates = TRUE)
+HML.DEV.Daily <- openxlsx::read.xlsx(AQR_HML_Devil_url, sheet=1, startRow=19, colNames=TRUE, detectDates = TRUE)
 
 
       ###   Clean up
-      variable.names <- colnames(HML.DEV)
+      variable.names <- colnames(HML.DEV.Daily)
       
       # New column names
       new_colnames <- c("DATE", "EQ.AUS", "EQ.AUT", "EQ.BEL", "EQ.CAN", "EQ.CHE", "EQ.DEU", "EQ.DNK",
@@ -21,20 +21,20 @@ HML.DEV <- openxlsx::read.xlsx(AQR_HML_Devil_url, sheet=1, startRow=19, colNames
                         "EQ.USA", "AEP.GL", "AEP.GLUS", "AEP.EU", "AEP.NA", "AEP.PA")
       
       # Assigning the new column names to the data frame
-      colnames(HML.DEV) <- new_colnames
+      colnames(HML.DEV.Daily) <- new_colnames
       
       # Convert the Date column to character and then to date format YYYY-MM
-      HML.DEV$DATE <- gsub("/", "", HML.DEV$DATE)
-      HML.DEV$DATE <- as.Date(paste0(substr(HML.DEV$DATE, 5, 8), "-", substr(HML.DEV$DATE, 1, 2), "-", substr(HML.DEV$DATE, 3, 4)))
+      HML.DEV.Daily$DATE <- gsub("/", "", HML.DEV.Daily$DATE)
+      HML.DEV.Daily$DATE <- as.Date(paste0(substr(HML.DEV.Daily$DATE, 5, 8), "-", substr(HML.DEV.Daily$DATE, 1, 2), "-", substr(HML.DEV.Daily$DATE, 3, 4)))
       
       # Convert the data.frame to xts object, using the Date column as the index
-      HML.DEV <- xts::xts(HML.DEV[, -1], order.by = HML.DEV$DATE)
+      HML.DEV.Daily <- xts::xts(HML.DEV.Daily[, -1], order.by = HML.DEV.Daily$DATE)
       
       # Check the structure of the xts object
-      str(HML.DEV)
+      str(HML.DEV.Daily)
       
       ### SAVE 
-      save(HML.DEV, file = paste0("data/HML.DEV.Daily.RData"), compress = "xz", compression_level = 9)
+      save(HML.DEV.Daily, file = paste0("data/HML.DEV.Daily.RData"), compress = "xz", compression_level = 9)
       
 
 
@@ -65,7 +65,7 @@ HML.DEV <- openxlsx::read.xlsx(AQR_HML_Devil_url, sheet=1, startRow=19, colNames
       str(HML.DEV.MKT.Daily)
       
       ## SAVE MKT 
-#      save(HML.DEV.MKT.Daily, file = paste0("data/HML.DEV.MKT.Daily.RData"), compress = "xz", compression_level = 9)
+      save(HML.DEV.MKT.Daily, file = paste0("data/HML.DEV.MKT.Daily.RData"), compress = "xz", compression_level = 9)
 
 
 ###
@@ -96,7 +96,7 @@ HML.DEV <- openxlsx::read.xlsx(AQR_HML_Devil_url, sheet=1, startRow=19, colNames
       str(HML.DEV.SMB.Daily)
       
       # SAVE SMB 
-#      save(HML.DEV.SMB.Daily, file = paste0("data/HML.DEV.SMB.Daily.RData"), compress = "xz", compression_level = 9)
+      save(HML.DEV.SMB.Daily, file = paste0("data/HML.DEV.SMB.Daily.RData"), compress = "xz", compression_level = 9)
 
 
 ###
@@ -126,7 +126,7 @@ HML.DEV <- openxlsx::read.xlsx(AQR_HML_Devil_url, sheet=1, startRow=19, colNames
       str(HML.DEV.HML.Daily)
       
       # SAVE HML 
-#      save(HML.DEV.HML.Daily, file = paste0("data/HML.DEV.HML.Daily.RData"), compress = "xz", compression_level = 9)
+      save(HML.DEV.HML.Daily, file = paste0("data/HML.DEV.HML.Daily.RData"), compress = "xz", compression_level = 9)
 
 
 ###      
@@ -158,7 +158,7 @@ HML.DEV <- openxlsx::read.xlsx(AQR_HML_Devil_url, sheet=1, startRow=19, colNames
       str(HML.DEV.UMD.Daily)
       
       # SAVE UMD
-#      save(HML.DEV.UMD.Daily, file = paste0("data/HML.DEV.UMD.Daily.RData"), compress = "xz", compression_level = 9)
+      save(HML.DEV.UMD.Daily, file = paste0("data/HML.DEV.UMD.Daily.RData"), compress = "xz", compression_level = 9)
 
 
 ###
@@ -185,7 +185,7 @@ HML.DEV <- openxlsx::read.xlsx(AQR_HML_Devil_url, sheet=1, startRow=19, colNames
       str(HML.DEV.RFR.Daily)
       
       # SAVE RFR
-#      save(HML.DEV.RFR.Daily, file = paste0("data/HML.DEV.RFR.Daily.RData"), compress = "xz", compression_level = 9)
+      save(HML.DEV.RFR.Daily, file = paste0("data/HML.DEV.RFR.Daily.RData"), compress = "xz", compression_level = 9)
 
 
 ## Add script to merge factor data by country below ##

@@ -7,8 +7,8 @@
 # Source: https://www.aqr.com/Insights/Datasets/Betting-Against-Beta-Equity-Factors-Monthly
 
 # Download in R environment
-Betting.Against.Beta.url <- "https://www.aqr.com/-/media/AQR/Documents/Insights/Data-Sets/Betting-Against-Beta-Equity-Factors-Monthly.xlsx"
-BAB.Factors.Monthly <- openxlsx::read.xlsx(Betting.Against.Beta.url, sheet=1, startRow=19, colNames=TRUE, detectDates = TRUE)
+BAB.Factors.Monthly.url <- "https://www.aqr.com/-/media/AQR/Documents/Insights/Data-Sets/Betting-Against-Beta-Equity-Factors-Monthly.xlsx"
+BAB.Factors.Monthly <- openxlsx::read.xlsx(BAB.Factors.Monthly.url, sheet=1, startRow=19, colNames=TRUE, detectDates = TRUE)
 
 
 ## IMporteded from Value Momentum Everywhere 
@@ -71,7 +71,7 @@ BAB.Factors.MKT.Monthly <- xts::xts(BAB.Factors.MKT.Monthly[, -1], order.by = BA
 str(BAB.Factors.MKT.Monthly)
 
 ## SAVE MKT 
-# save(BAB.Factors.MKT.Monthly, file = paste0("data/BAB.Factors.MKT.Monthly.RData"), compress = "xz", compression_level = 9)
+save(BAB.Factors.MKT.Monthly, file = paste0("data/BAB.Factors.MKT.Monthly.RData"), compress = "xz", compression_level = 9)
 
 
 ###
@@ -102,7 +102,7 @@ BAB.Factors.SMB.Monthly <- xts::xts(BAB.Factors.SMB.Monthly[, -1], order.by = BA
 str(BAB.Factors.SMB.Monthly)
 
 # SAVE SMB 
-# save(BAB.Factors.SMB.Monthly, file = paste0("data/BAB.Factors.SMB.Monthly.RData"), compress = "xz", compression_level = 9)
+save(BAB.Factors.SMB.Monthly, file = paste0("data/BAB.Factors.SMB.Monthly.RData"), compress = "xz", compression_level = 9)
 
 
 
@@ -133,7 +133,7 @@ BAB.Factors.HML.FF.Monthly <- xts::xts(BAB.Factors.HML.FF.Monthly[, -1], order.b
 str(BAB.Factors.HML.FF.Monthly)
 
 # SAVE HML.FF 
-# save(BAB.Factors.HML.FF.Monthly, file = paste0("data/BAB.Factors.HML.FF.Monthly.RData"), compress = "xz", compression_level = 9)
+save(BAB.Factors.HML.FF.Monthly, file = paste0("data/BAB.Factors.HML.FF.Monthly.RData"), compress = "xz", compression_level = 9)
 
 
 ###
@@ -163,7 +163,7 @@ BAB.Factors.HML.Devil.Monthly <- xts::xts(BAB.Factors.HML.Devil.Monthly[, -1], o
 str(BAB.Factors.HML.Devil.Monthly)
 
 # SAVE HML.Devil 
-# save(BAB.Factors.HML.Devil.Monthly, file = paste0("data/BAB.Factors.HML.Devil.Monthly.RData"), compress = "xz", compression_level = 9)
+save(BAB.Factors.HML.Devil.Monthly, file = paste0("data/BAB.Factors.HML.Devil.Monthly.RData"), compress = "xz", compression_level = 9)
 
 
 
@@ -196,7 +196,9 @@ BAB.Factors.UMD.Monthly <- xts::xts(BAB.Factors.UMD.Monthly[, -1], order.by = BA
 str(BAB.Factors.UMD.Monthly)
 
 # SAVE UMD
-# save(BAB.Factors.UMD.Monthly, file = paste0("data/BAB.Factors.UMD.Monthly.RData"), compress = "xz", compression_level = 9)
+save(BAB.Factors.UMD.Monthly, file = paste0("data/BAB.Factors.UMD.Monthly.RData"), compress = "xz", compression_level = 9)
+
+
 
 ###
 ###   6. Total Market Value of Equity (ME) factors, lagged 1 month (Billion USD)
@@ -225,7 +227,7 @@ BAB.Factors.ME_1.Monthly <- xts::xts(BAB.Factors.ME_1.Monthly[, -1], order.by = 
 str(BAB.Factors.ME_1.Monthly)
 
 # SAVE ME_1 
-# save(BAB.Factors.ME_1.Monthly, file = paste0("data/BAB.Factors.ME_1.Monthly.RData"), compress = "xz", compression_level = 9)
+save(BAB.Factors.ME_1.Monthly, file = paste0("data/BAB.Factors.ME_1.Monthly.RData"), compress = "xz", compression_level = 9)
 
 
 ###
@@ -252,7 +254,7 @@ BAB.Factors.RFR.Monthly <- xts::xts(BAB.Factors.RFR.Monthly[, -1], order.by = BA
 str(BAB.Factors.RFR.Monthly)
 
 # SAVE RFR
-# save(BAB.Factors.RFR.Monthly, file = paste0("data/BAB.Factors.RFR.Monthly.RData"), compress = "xz", compression_level = 9)
+save(BAB.Factors.RFR.Monthly, file = paste0("data/BAB.Factors.RFR.Monthly.RData"), compress = "xz", compression_level = 9)
 
 
 ## Add script to merge factor data by country below ##
