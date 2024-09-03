@@ -1,4 +1,8 @@
-#' Quality Minus Junk: Factors, Monthly
+#' Quality Minus Junk: Factors ~ Total Market Value of Equity (ME) factors, 
+#' lagged 1 month (Billion USD) (ME_1), Monthly
+#' 
+#' This file contains Total Market Value of Equity (ME) as of the prior month, 
+#' in Billion US
 #'
 #' This data set is related to “Quality Minus Junk” (Asness, Frazzini and Pedersen, 
 #' 2014). Quality stocks — those of companies that are profitable, growing and well
@@ -24,7 +28,7 @@
 #' 
 #' @docType data
 #'
-#' @usage data('QMJ.Factors.Monthly')
+#' @usage data('QMJ.Factors.ME_1.Monthly')
 #'
 #' @format A xts object with 802 observations on 29 variables:
 #' \itemize{
@@ -294,7 +298,7 @@
 #' **Past performance of the Information is not an indication of future results.**
 #' 
 #' \url{https://www.aqr.com/Insights/Datasets/Quality-Minus-Junk-Factors-Monthly}
-#' @examples  str(QMJ.Factors.Monthly)
-"QMJ.Factors.Monthly"
+#' @examples  str(QMJ.Factors.ME_1.Monthly)
+"QMJ.Factors.ME_1.Monthly"
 
 

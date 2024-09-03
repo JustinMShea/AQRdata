@@ -1,4 +1,6 @@
-#' Responsible Investing: The ESG-Efficient Frontier – Original Paper Data
+#' Responsible Investing: The ESG-Efficient Frontier – Original Paper Data (EW.G)
+#'
+#' This file contains the Low CO2 emissions (G) equal-weighted portfolios. 
 #'
 #' This is the original data set used in “Responsible Investing: The 
 #' ESG-Efficient Frontier” (Pedersen, Fitzgibbons and Pomorski). The paper 
@@ -26,7 +28,7 @@
 #'
 #' @docType data
 #'
-#' @usage data('ESG.VW.ESG')
+#' @usage data('ESG.EW.G')
 #'
 #' @format An xts object on 1972-01-31 / 2024-04-30 containing: Data: 628 entries, 22 total columns
 #' \itemize{
@@ -86,5 +88,5 @@
 #' **Past performance of the Information is not an indication of future results.**
 #'
 #' \url{https://www.aqr.com/Insights/Datasets/Value-and-Momentum-Everywhere-Factors-Monthly}
-#' @examples  str(ESG.VW.ESG)
-"ESG.VW.ESG"
+#' @examples  str(ESG.EW.G)
+"ESG.EW.G"

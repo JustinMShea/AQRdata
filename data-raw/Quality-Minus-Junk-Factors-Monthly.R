@@ -91,7 +91,7 @@ QMJ.Factors.MKT.Monthly <- xts::xts(QMJ.Factors.MKT.Monthly[, -1], order.by = QM
 str(QMJ.Factors.MKT.Monthly)
 
 ## SAVE MKT 
-# save(QMJ.Factors.MKT.Monthly, file = paste0("data/QMJ.Factors.MKT.Monthly.RData"), compress = "xz", compression_level = 9)
+save(QMJ.Factors.MKT.Monthly, file = paste0("data/QMJ.Factors.MKT.Monthly.RData"), compress = "xz", compression_level = 9)
 
 
 ###
@@ -122,7 +122,7 @@ QMJ.Factors.SMB.Monthly <- xts::xts(QMJ.Factors.SMB.Monthly[, -1], order.by = QM
 str(QMJ.Factors.SMB.Monthly)
 
 # SAVE SMB 
-# save(QMJ.Factors.SMB.Monthly, file = paste0("data/QMJ.Factors.SMB.Monthly.RData"), compress = "xz", compression_level = 9)
+save(QMJ.Factors.SMB.Monthly, file = paste0("data/QMJ.Factors.SMB.Monthly.RData"), compress = "xz", compression_level = 9)
 
 
 
@@ -153,7 +153,7 @@ QMJ.Factors.HML.FF.Monthly <- xts::xts(QMJ.Factors.HML.FF.Monthly[, -1], order.b
 str(QMJ.Factors.HML.FF.Monthly)
 
 # SAVE HML.FF 
-# save(QMJ.Factors.HML.FF.Monthly, file = paste0("data/QMJ.Factors.HML.FF.Monthly.RData"), compress = "xz", compression_level = 9)
+save(QMJ.Factors.HML.FF.Monthly, file = paste0("data/QMJ.Factors.HML.FF.Monthly.RData"), compress = "xz", compression_level = 9)
 
 
 ###
@@ -183,7 +183,7 @@ QMJ.Factors.HML.Devil.Monthly <- xts::xts(QMJ.Factors.HML.Devil.Monthly[, -1], o
 str(QMJ.Factors.HML.Devil.Monthly)
 
 # SAVE HML.Devil 
-# save(QMJ.Factors.HML.Devil.Monthly, file = paste0("data/QMJ.Factors.HML.Devil.Monthly.RData"), compress = "xz", compression_level = 9)
+save(QMJ.Factors.HML.Devil.Monthly, file = paste0("data/QMJ.Factors.HML.Devil.Monthly.RData"), compress = "xz", compression_level = 9)
 
 
 
@@ -216,7 +216,7 @@ QMJ.Factors.UMD.Monthly <- xts::xts(QMJ.Factors.UMD.Monthly[, -1], order.by = QM
 str(QMJ.Factors.UMD.Monthly)
 
 # SAVE UMD
-# save(QMJ.Factors.UMD.Monthly, file = paste0("data/QMJ.Factors.UMD.Monthly.RData"), compress = "xz", compression_level = 9)
+save(QMJ.Factors.UMD.Monthly, file = paste0("data/QMJ.Factors.UMD.Monthly.RData"), compress = "xz", compression_level = 9)
 
 ###
 ###   6. Total Market Value of Equity (ME) factors, lagged 1 month (Billion USD)
@@ -245,7 +245,7 @@ QMJ.Factors.ME_1.Monthly <- xts::xts(QMJ.Factors.ME_1.Monthly[, -1], order.by = 
 str(QMJ.Factors.ME_1.Monthly)
 
 # SAVE ME_1 
-# save(QMJ.Factors.ME_1.Monthly, file = paste0("data/QMJ.Factors.ME_1.Monthly.RData"), compress = "xz", compression_level = 9)
+save(QMJ.Factors.ME_1.Monthly, file = paste0("data/QMJ.Factors.ME_1.Monthly.RData"), compress = "xz", compression_level = 9)
 
 
 ###
@@ -272,7 +272,7 @@ QMJ.Factors.RFR.Monthly <- xts::xts(QMJ.Factors.RFR.Monthly[, -1], order.by = QM
 str(QMJ.Factors.RFR.Monthly)
 
 # SAVE RFR
-# save(QMJ.Factors.RFR.Monthly, file = paste0("data/QMJ.Factors.RFR.Monthly.RData"), compress = "xz", compression_level = 9)
+save(QMJ.Factors.RFR.Monthly, file = paste0("data/QMJ.Factors.RFR.Monthly.RData"), compress = "xz", compression_level = 9)
 
 
 ## Add script to merge factor data by country below ##

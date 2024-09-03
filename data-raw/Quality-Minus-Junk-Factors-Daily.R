@@ -75,7 +75,7 @@ QMJ.Factors.MKT.Daily <- xts::xts(QMJ.Factors.MKT.Daily[, -1], order.by = QMJ.Fa
 str(QMJ.Factors.MKT.Daily)
 
 ## SAVE MKT 
-# save(QMJ.Factors.MKT.Daily, file = paste0("data/QMJ.Factors.MKT.Daily.RData"), compress = "xz", compression_level = 9)
+save(QMJ.Factors.MKT.Daily, file = paste0("data/QMJ.Factors.MKT.Daily.RData"), compress = "xz", compression_level = 9)
 
 
 ###
@@ -106,7 +106,7 @@ QMJ.Factors.SMB.Daily <- xts::xts(QMJ.Factors.SMB.Daily[, -1], order.by = QMJ.Fa
 str(QMJ.Factors.SMB.Daily)
 
 # SAVE SMB 
-# save(QMJ.Factors.SMB.Daily, file = paste0("data/QMJ.Factors.SMB.Daily.RData"), compress = "xz", compression_level = 9)
+save(QMJ.Factors.SMB.Daily, file = paste0("data/QMJ.Factors.SMB.Daily.RData"), compress = "xz", compression_level = 9)
 
 
 
@@ -137,7 +137,7 @@ QMJ.Factors.HML.FF.Daily <- xts::xts(QMJ.Factors.HML.FF.Daily[, -1], order.by = 
 str(QMJ.Factors.HML.FF.Daily)
 
 # SAVE HML.FF 
-# save(QMJ.Factors.HML.FF.Daily, file = paste0("data/QMJ.Factors.HML.FF.Daily.RData"), compress = "xz", compression_level = 9)
+save(QMJ.Factors.HML.FF.Daily, file = paste0("data/QMJ.Factors.HML.FF.Daily.RData"), compress = "xz", compression_level = 9)
 
 
 ###
@@ -167,7 +167,7 @@ QMJ.Factors.HML.Devil.Daily <- xts::xts(QMJ.Factors.HML.Devil.Daily[, -1], order
 str(QMJ.Factors.HML.Devil.Daily)
 
 # SAVE HML.Devil 
-# save(QMJ.Factors.HML.Devil.Daily, file = paste0("data/QMJ.Factors.HML.Devil.Daily.RData"), compress = "xz", compression_level = 9)
+save(QMJ.Factors.HML.Devil.Daily, file = paste0("data/QMJ.Factors.HML.Devil.Daily.RData"), compress = "xz", compression_level = 9)
 
 
 
@@ -200,7 +200,7 @@ QMJ.Factors.UMD.Daily <- xts::xts(QMJ.Factors.UMD.Daily[, -1], order.by = QMJ.Fa
 str(QMJ.Factors.UMD.Daily)
 
 # SAVE UMD
-# save(QMJ.Factors.UMD.Daily, file = paste0("data/QMJ.Factors.UMD.Daily.RData"), compress = "xz", compression_level = 9)
+save(QMJ.Factors.UMD.Daily, file = paste0("data/QMJ.Factors.UMD.Daily.RData"), compress = "xz", compression_level = 9)
 
 
 ###
@@ -227,7 +227,7 @@ QMJ.Factors.RFR.Daily <- xts::xts(QMJ.Factors.RFR.Daily[, -1], order.by = QMJ.Fa
 str(QMJ.Factors.RFR.Daily)
 
 # SAVE RFR
-# save(QMJ.Factors.RFR.Daily, file = paste0("data/QMJ.Factors.RFR.Daily.RData"), compress = "xz", compression_level = 9)
+save(QMJ.Factors.RFR.Daily, file = paste0("data/QMJ.Factors.RFR.Daily.RData"), compress = "xz", compression_level = 9)
 
 
 ## Add script to merge factor data by country below ##

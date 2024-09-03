@@ -33,7 +33,7 @@ ESG.Efficient.Frontier.url <- "https://www.aqr.com/-/media/AQR/Documents/Insight
       str(ESG.VW.E)
       
       # Save E
-#      save(ESG.VW.E, file = paste0("data/ESG.VW.E.RData"), compress = "xz", compression_level = 9)
+      save(ESG.VW.E, file = paste0("data/ESG.VW.E.RData"), compress = "xz", compression_level = 9)
  
 ### 
 ###   2. S (Non-Sin Stocks)
@@ -55,7 +55,7 @@ ESG.Efficient.Frontier.url <- "https://www.aqr.com/-/media/AQR/Documents/Insight
       str(ESG.VW.S)
       
       # Save S
-#      save(ESG.VW.S, file = paste0("data/ESG.VW.S.RData"), compress = "xz", compression_level = 9)
+      save(ESG.VW.S, file = paste0("data/ESG.VW.S.RData"), compress = "xz", compression_level = 9)
 
 ###
 ###   3. G (Low Accruals)
@@ -77,7 +77,7 @@ ESG.Efficient.Frontier.url <- "https://www.aqr.com/-/media/AQR/Documents/Insight
       str(ESG.VW.G)
       
       # Save G
-#      save(ESG.VW.G, file = paste0("data/ESG.VW.G.RData"), compress = "xz", compression_level = 9)
+      save(ESG.VW.G, file = paste0("data/ESG.VW.G.RData"), compress = "xz", compression_level = 9)
       
       ###
       ###   4. ESG (Low Accruals)
@@ -124,7 +124,7 @@ ESG.Efficient.Frontier.url <- "https://www.aqr.com/-/media/AQR/Documents/Insight
       str(ESG.EW.E)
       
       # Save E
-      #      save(ESG.EW.E, file = paste0("data/ESG.EW.E.RData"), compress = "xz", compression_level = 9)
+      save(ESG.EW.E, file = paste0("data/ESG.EW.E.RData"), compress = "xz", compression_level = 9)
       
       ### 
       ###   2. S (Non-Sin Stocks)
@@ -146,7 +146,7 @@ ESG.Efficient.Frontier.url <- "https://www.aqr.com/-/media/AQR/Documents/Insight
       str(ESG.EW.S)
       
       # Save S
-      #      save(ESG.EW.S, file = paste0("data/ESG.EW.S.RData"), compress = "xz", compression_level = 9)
+      save(ESG.EW.S, file = paste0("data/ESG.EW.S.RData"), compress = "xz", compression_level = 9)
       
       ###
       ###   3. G (Low Accruals)
@@ -168,7 +168,7 @@ ESG.Efficient.Frontier.url <- "https://www.aqr.com/-/media/AQR/Documents/Insight
       str(ESG.EW.G)
       
       # Save G
-      #      save(ESG.EW.G, file = paste0("data/ESG.EW.G.RData"), compress = "xz", compression_level = 9)
+      save(ESG.EW.G, file = paste0("data/ESG.EW.G.RData"), compress = "xz", compression_level = 9)
       
       ###
       ###   4. ESG (Low Accruals)
@@ -190,4 +190,4 @@ ESG.Efficient.Frontier.url <- "https://www.aqr.com/-/media/AQR/Documents/Insight
       str(ESG.EW.ESG)
       
       # Save ESG
-      #   save(ESG.EW.ESG, file = paste0("data/ESG.EW.ESG.RData"), compress = "xz", compression_level = 9)
+      save(ESG.EW.ESG, file = paste0("data/ESG.EW.ESG.RData"), compress = "xz", compression_level = 9)
