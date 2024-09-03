@@ -32,91 +32,91 @@
 #' \itemize{
 #'  \item \strong{Date:} Date, monthly periodicity. Formatted in as a Date object in %Y-%m-%d format.
 #'  \item \strong{EQ.AUS:} Returns, numerical. AUS equity porfolio that is 
-#'  long high quality stocks and short low quality stocks. 
+#'  monthly market returns in excess of t-bills. 
 #'  Abbreviated from original name of "Equities ~ AUS"
 #'  \item \strong{EQ.AUT:} Returns, numerical. AUT equity porfolio that is 
-#'  long high quality stocks and short low quality stocks. 
+#'  monthly market returns in excess of t-bills. 
 #'  Abbreviated from original name of "Equities ~ AUT"
 #'  \item \strong{EQ.BEL:} Returns, numerical. BEL equity porfolio that is 
-#'  long high quality stocks and short low quality stocks. 
+#'  monthly market returns in excess of t-bills. 
 #'  Abbreviated from original name of "Equities ~ BEL"
 #'  \item \strong{EQ.CAN:} Returns, numerical. CAN equity porfolio that is 
-#'  long high quality stocks and short low quality stocks. 
+#'  monthly market returns in excess of t-bills. 
 #'  Abbreviated from original name of "Equities ~ CAN"
 #'  \item \strong{EQ.CHE:} Returns, numerical. CHE equity porfolio that is 
-#'  long high quality stocks and short low quality stocks. 
+#'  monthly market returns in excess of t-bills. 
 #'  Abbreviated from original name of "Equities ~ CHE"
 #'  \item \strong{EQ.DEU:} Returns, numerical. DEU equity porfolio that is 
-#'  long high quality stocks and short low quality stocks. 
+#'  monthly market returns in excess of t-bills. 
 #'  Abbreviated from original name of "Equities ~ DEU"
 #'  \item \strong{EQ.DNK:} Returns, numerical. DNK equity porfolio that is 
-#'  long high quality stocks and short low quality stocks. 
+#'  monthly market returns in excess of t-bills. 
 #'  Abbreviated from original name of "Equities ~ DNK"
 #'  \item \strong{EQ.ESP:} Returns, numerical. ESP equity porfolio that is 
-#'  long high quality stocks and short low quality stocks. 
+#'  monthly market returns in excess of t-bills. 
 #'  Abbreviated from original name of "Equities ~ ESP"
 #'  \item \strong{EQ.FIN:} Returns, numerical. FIN equity porfolio that is 
-#'  long high quality stocks and short low quality stocks. 
+#'  monthly market returns in excess of t-bills. 
 #'  Abbreviated from original name of "Equities ~ FIN"
 #'  \item \strong{EQ.FRA:} Returns, numerical. FRA equity porfolio that is 
-#'  long high quality stocks and short low quality stocks. 
+#'  monthly market returns in excess of t-bills. 
 #'  Abbreviated from original name of "Equities ~ FRA"
 #'  \item \strong{EQ.GBR:} Returns, numerical. GBR equity porfolio that is 
-#'  long high quality stocks and short low quality stocks. 
+#'  monthly market returns in excess of t-bills. 
 #'  Abbreviated from original name of "Equities ~ GBR"
 #'  \item \strong{EQ.GRC:} Returns, numerical. GRC equity porfolio that is 
-#'  long high quality stocks and short low quality stocks. 
+#'  monthly market returns in excess of t-bills. 
 #'  Abbreviated from original name of "Equities ~ GRC"
 #'  \item \strong{EQ.HKG:} Returns, numerical. HKG equity porfolio that is 
-#'  long high quality stocks and short low quality stocks. 
+#'  monthly market returns in excess of t-bills. 
 #'  Abbreviated from original name of "Equities ~ HKG"  
 #'  \item \strong{EQ.IRL:} Returns, numerical. IRL equity porfolio that is 
-#'  long high quality stocks and short low quality stocks. 
+#'  monthly market returns in excess of t-bills. 
 #'  Abbreviated from original name of "Equities ~ IRL"  
 #'  \item \strong{EQ.ISR:} Returns, numerical. ISR equity porfolio that is 
-#'  long high quality stocks and short low quality stocks. 
+#'  monthly market returns in excess of t-bills. 
 #'  Abbreviated from original name of "Equities ~ ISR"  
 #'  \item \strong{EQ.ITA:} Returns, numerical. ITA equity porfolio that is 
-#'  long high quality stocks and short low quality stocks. 
+#'  monthly market returns in excess of t-bills. 
 #'  Abbreviated from original name of "Equities ~ ITA"  
 #'  \item \strong{EQ.JPN:} Returns, numerical. JPN equity porfolio that is 
-#'  long high quality stocks and short low quality stocks. 
+#'  monthly market returns in excess of t-bills. 
 #'  Abbreviated from original name of "Equities ~ JPN"  
 #'  \item \strong{EQ.NLD:} Returns, numerical. NLD equity porfolio that is 
-#'  long high quality stocks and short low quality stocks. 
+#'  monthly market returns in excess of t-bills. 
 #'  Abbreviated from original name of "Equities ~ NLD"  
 #'  \item \strong{EQ.NOR:} Returns, numerical. NOR equity porfolio that is 
-#'  long high quality stocks and short low quality stocks. 
+#'  monthly market returns in excess of t-bills. 
 #'  Abbreviated from original name of "Equities ~ NOR"  
 #'  \item \strong{EQ.NZL:} Returns, numerical. NZL equity porfolio that is 
-#'  long high quality stocks and short low quality stocks. 
+#'  monthly market returns in excess of t-bills. 
 #'  Abbreviated from original name of "Equities ~ NZL" 
 #'  \item \strong{EQ.PRT:} Returns, numerical. PRT equity porfolio that is 
-#'  long high quality stocks and short low quality stocks. 
+#'  monthly market returns in excess of t-bills. 
 #'  Abbreviated from original name of "Equities ~ PRT" 
 #'  \item \strong{EQ.SGP:} Returns, numerical. SGP equity porfolio that is 
-#'  long high quality stocks and short low quality stocks. 
+#'  monthly market returns in excess of t-bills. 
 #'  Abbreviated from original name of "Equities ~ SGP" 
 #'  \item \strong{EQ.SWE:} Returns, numerical. SWE equity porfolio that is 
-#'  long high quality stocks and short low quality stocks. 
+#'  monthly market returns in excess of t-bills. 
 #'  Abbreviated from original name of "Equities ~ SWE" 
 #'  \item \strong{EQ.USA:} Returns, numerical. USA equity porfolio that is 
-#'  long high quality stocks and short low quality stocks. 
+#'  monthly market returns in excess of t-bills. 
 #'  Abbreviated from original name of "Equities ~ USA"
 #'  \item \strong{AEP.GL:} Returns, numerical. Aggregate global equity porfolio 
-#'  that is long high quality stocks and short low quality stocks. 
+#'  that is monthly market returns in excess of t-bills. 
 #'  Abbreviated from original name of "Aggregate Equity Portfolios ~ Global"
 #'  \item \strong{AEP.GL.US:} Returns, numerical. Aggregate global equity porfolio 
-#'  except USA that is long high quality stocks and short low quality stocks. 
+#'  except USA that is monthly market returns in excess of t-bills. 
 #'  Abbreviated from original name of "Aggregate Equity Portfolios ~ Global Ex USA"
 #'  \item \strong{AEP.EU:} Returns, numerical. Aggregate Europe equity porfolio 
-#'  that is long high quality stocks and short low quality stocks. 
+#'  that is monthly market returns in excess of t-bills. 
 #'  Abbreviated from original name of "Aggregate Equity Portfolios ~ Europe"
 #'  \item \strong{AEP.NA:} Returns, numerical. Aggregate North America equity porfolio 
-#'  that is long high quality stocks and short low quality stocks. 
+#'  that is monthly market returns in excess of t-bills. 
 #'  Abbreviated from original name of "Aggregate Equity Portfolios ~ North America"
 #'  \item \strong{AEP.PA:} Returns, numerical. Aggregate Pacific equity porfolio 
-#'  that is long high quality stocks and short low quality stocks. 
+#'  that is monthly market returns in excess of t-bills. 
 #'  Abbreviated from original name of "Aggregate Equity Portfolios ~ Pacific"
 #' }
 #' @source 
