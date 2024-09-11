@@ -33,18 +33,12 @@
 #' @format An xts object on 1972-01-31 / 2024-04-30 containing: Data: 628 entries, 22 total columns
 #' \itemize{
 #'  \item \strong{Date:} Date, monthly periodicity. Formatted in as a Date object in %Y-%m-%d format.
-#'  \item \strong{ESG1:} Returns, Total returns of portfolios sorted by ESG
-#'  Abbreviated from original name of "ESG (Overall MSCI ESG Score) ~ ESG1 (low ESG)" 
-#'  \item \strong{ESG2:} Returns, Total returns of portfolios sorted by ESG
-#'  Abbreviated from original name of "ESG (Overall MSCI ESG Score) ~ ESG2"
-#'  \item \strong{ESG3:} Returns, Total returns of portfolios sorted by ESG
-#'  Abbreviated from original name of "ESG (Overall MSCI ESG Score) ~ ESG3"
-#'  \item \strong{ESG4:} Returns, Total returns of portfolios sorted by ESG
-#'  Abbreviated from original name of "ESG (Overall MSCI ESG Score) ~ ESG4"
-#'  \item \strong{ESG5:} Returns, Total returns of portfolios sorted by E
-#'  Abbreviated from original name of "ESG (Overall MSCI ESG Score) ~ ESG5 (high ESG)"
-#'  \item \strong{ESG5.1:} Returns, Total returns of portfolios sorted by ESG
-#'  Abbreviated from original name of "ESG (Overall MSCI ESG Score) ~ ESG5.1"
+#'  \item \strong{S1:} Returns, Total returns of portfolios sorted by S
+#'  Abbreviated from original name of "Sin Stocks (S) ~ value-weighted ~ S1" 
+#'  \item \strong{S2:} Returns, Total returns of portfolios sorted by S
+#'  Abbreviated from original name of "Non-Sin Stocks (S) ~ value-weighted ~ S2"
+#'  \item \strong{S2.1:} Returns, Total returns of portfolios sorted by S 
+#'  Abbreviated from original name of "Non-Sin minus sin Stocks (S) ~ value-weighted ~ S2 - S1"
 #' }
 #' @source
 #'

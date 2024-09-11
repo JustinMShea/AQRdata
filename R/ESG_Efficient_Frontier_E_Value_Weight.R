@@ -33,18 +33,18 @@
 #' @format An xts object on 1972-01-31 / 2024-04-30 containing: Data: 628 entries, 22 total columns
 #' \itemize{
 #'  \item \strong{Date:} Date, monthly periodicity. Formatted in as a Date object in %Y-%m-%d format.
-#'  \item \strong{ESG1:} Returns, Total returns of portfolios sorted by ESG
-#'  Abbreviated from original name of "ESG (Overall MSCI ESG Score) ~ ESG1 (low ESG)" 
-#'  \item \strong{ESG2:} Returns, Total returns of portfolios sorted by ESG
-#'  Abbreviated from original name of "ESG (Overall MSCI ESG Score) ~ ESG2"
-#'  \item \strong{ESG3:} Returns, Total returns of portfolios sorted by ESG
-#'  Abbreviated from original name of "ESG (Overall MSCI ESG Score) ~ ESG3"
-#'  \item \strong{ESG4:} Returns, Total returns of portfolios sorted by ESG
-#'  Abbreviated from original name of "ESG (Overall MSCI ESG Score) ~ ESG4"
-#'  \item \strong{ESG5:} Returns, Total returns of portfolios sorted by E
-#'  Abbreviated from original name of "ESG (Overall MSCI ESG Score) ~ ESG5 (high ESG)"
-#'  \item \strong{ESG5.1:} Returns, Total returns of portfolios sorted by ESG
-#'  Abbreviated from original name of "ESG (Overall MSCI ESG Score) ~ ESG5.1"
+#'  \item \strong{E1:} Returns, Total returns of portfolios sorted by E
+#'  Abbreviated from original name of "High CO2 emissions 1/5 (E) ~ value-weighted ~ E1" 
+#'  \item \strong{E2:} Returns, Total returns of portfolios sorted by E
+#'  Abbreviated from original name of "High CO2 emissions 2/5 (E) ~ value-weighted ~ E2"
+#'  \item \strong{E3:} Returns, Total returns of portfolios sorted by E
+#'  Abbreviated from original name of "Medium CO2 emissions3/5 (E) ~ value-weighted ~ E3" 
+#'  \item \strong{E4:} Returns, Total returns of portfolios sorted by E
+#'  Abbreviated from original name of "Low CO2 emissions 4/5 (E) ~ value-weighted ~ E4"
+#'  \item \strong{E5:} Returns, Total returns of portfolios sorted by E
+#'  Abbreviated from original name of "Low CO2 emissions 5/5 (E) ~ value-weighted ~ E5"
+#'  \item \strong{E5.1:} Returns, Total returns of portfolios sorted by E
+#'  Abbreviated from original name of "Low (5/5) - High (1/5) accruals (E) ~ value-weighted ~ E5 - E1"
 #' }
 #' @source
 #'

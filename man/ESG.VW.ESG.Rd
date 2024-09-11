@@ -19,7 +19,7 @@ An xts object on 1972-01-31 / 2024-04-30 containing: Data: 628 entries, 22 total
  \item \strong{ESG5:} Returns, Total returns of portfolios sorted by E
  Abbreviated from original name of "ESG (Overall MSCI ESG Score) ~ ESG5 (high ESG)"
  \item \strong{ESG5.1:} Returns, Total returns of portfolios sorted by ESG
- Abbreviated from original name of "ESG (Overall MSCI ESG Score) ~ ESG5.1"
+ Abbreviated from original name of "High (5) minus Low (1) ESG (Overall MSCI ESG Score) ~ ESG5.1"
 }
 }
 \source{
@@ -68,7 +68,7 @@ may affect the value, price or income of an investment adversely.
 data('ESG.VW.ESG')
 }
 \description{
-This file contains the Low Accruals (ESG) value-weighted portfolios.
+This file contains the High ESG (ESG) value-weighted portfolios.
 }
 \details{
 This is the original data set used in “Responsible Investing: The 

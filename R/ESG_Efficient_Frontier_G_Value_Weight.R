@@ -1,6 +1,6 @@
 #' Responsible Investing: The ESG-Efficient Frontier – Original Paper Data (VW.G)
 #'
-#' This file contains the Low CO2 emissions (G) value-weighted portfolios. 
+#' This file contains the Low accruals (G) value-weighted portfolios. 
 #'
 #' This is the original data set used in “Responsible Investing: The 
 #' ESG-Efficient Frontier” (Pedersen, Fitzgibbons and Pomorski). The paper 
@@ -33,18 +33,18 @@
 #' @format An xts object on 1972-01-31 / 2024-04-30 containing: Data: 628 entries, 22 total columns
 #' \itemize{
 #'  \item \strong{Date:} Date, monthly periodicity. Formatted in as a Date object in %Y-%m-%d format.
-#'  \item \strong{ESG1:} Returns, Total returns of portfolios sorted by ESG
-#'  Abbreviated from original name of "ESG (Overall MSCI ESG Score) ~ ESG1 (low ESG)" 
-#'  \item \strong{ESG2:} Returns, Total returns of portfolios sorted by ESG
-#'  Abbreviated from original name of "ESG (Overall MSCI ESG Score) ~ ESG2"
-#'  \item \strong{ESG3:} Returns, Total returns of portfolios sorted by ESG
-#'  Abbreviated from original name of "ESG (Overall MSCI ESG Score) ~ ESG3"
-#'  \item \strong{ESG4:} Returns, Total returns of portfolios sorted by ESG
-#'  Abbreviated from original name of "ESG (Overall MSCI ESG Score) ~ ESG4"
-#'  \item \strong{ESG5:} Returns, Total returns of portfolios sorted by E
-#'  Abbreviated from original name of "ESG (Overall MSCI ESG Score) ~ ESG5 (high ESG)"
-#'  \item \strong{ESG5.1:} Returns, Total returns of portfolios sorted by ESG
-#'  Abbreviated from original name of "ESG (Overall MSCI ESG Score) ~ ESG5.1"
+#'  \item \strong{G1:} Returns, Total returns of portfolios sorted by G
+#'  Abbreviated from original name of "High accruals 1/5 (G) ~ value-weighted ~ G1" 
+#'  \item \strong{G2:} Returns, Total returns of portfolios sorted by G
+#'  Abbreviated from original name of "High accruals 2/5 (G) ~ value-weighted ~ G2"
+#'  \item \strong{G3:} Returns, Total returns of portfolios sorted by G
+#'  Abbreviated from original name of "Medium accruals 3/5 (G) ~ value-weighted ~ G3" 
+#'  \item \strong{G4:} Returns, Total returns of portfolios sorted by G
+#'  Abbreviated from original name of "Low accruals 4/5 (G) ~ value-weighted ~ G4"
+#'  \item \strong{G5:} Returns, Total returns of portfolios sorted by G
+#'  Abbreviated from original name of "Low accruals 5/5 (G) ~ value-weighted ~ G5"
+#'  \item \strong{G5.1:} Returns, Total returns of portfolios sorted by G
+#'  Abbreviated from original name of "Low (5/5) - High (1/5) accruals (G) ~ value-weighted ~ G5 - G1"
 #' }
 #' @source
 #'

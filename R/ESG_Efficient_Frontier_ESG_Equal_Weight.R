@@ -1,6 +1,6 @@
 #' Responsible Investing: The ESG-Efficient Frontier – Original Paper Data (EW.ESG)
 #'
-#' This file contains the Low Accruals (ESG) equal-weighted portfolios.
+#' This file contains the High ESG (ESG) equal-weighted portfolios.
 #'
 #' This is the original data set used in “Responsible Investing: The 
 #' ESG-Efficient Frontier” (Pedersen, Fitzgibbons and Pomorski). The paper 
@@ -44,7 +44,7 @@
 #'  \item \strong{ESG5:} Returns, Total returns of portfolios sorted by E
 #'  Abbreviated from original name of "ESG (Overall MSCI ESG Score) ~ ESG5 (high ESG)"
 #'  \item \strong{ESG5.1:} Returns, Total returns of portfolios sorted by ESG
-#'  Abbreviated from original name of "ESG (Overall MSCI ESG Score) ~ ESG5.1"
+#'  Abbreviated from original name of "High (5) minus Low (1) ESG (Overall MSCI ESG Score) ~ ESG5.1"
 #' }
 #' @source
 #'
