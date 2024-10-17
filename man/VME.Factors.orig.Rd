@@ -8,47 +8,50 @@
 An xts object on Jan 1972 / Jul 2011 containing: Data: 475 entries, 22 total columns
 \itemize{
  \item \strong{Date:} Date, monthly periodicity. Formatted in as a Date object in %m/%d/%Y format.
- \item \strong{VAL1US:} Excess returns of Value US equities in the lowest group. 
- \item \strong{VAL2US:} Excess returns of Value US equities in the medium group. 
- \item \strong{VAL3US:} Excess returns of Value US equities in the large group. 
- 
+ \item \strong{VAL.EVR:} Excess returns of a ranked-weighted value factor, VAL, Everywhere, EVR
+ original name of "VAL^EVR"
+ \item \strong{MOM.EVR:} Excess returns of a ranked-weighted momentum factor, MOM, Everywhere, EVR
+ original name of "MOM^EVR"
+ \item \strong{VALFactorSS:} Excess returns of a ranked-weighted value factor, VAL, ALL OTHER, AA
+ original name of "VALM^SS"
  \item \strong{MOMFactorSS:} Rank-weighted momentum factor, MOM, ALL EQUITIES, SS
- original name of "VAL^AA"
+ original name of "MOM^SS"
  \item \strong{VALFactorAA:} Excess returns of a ranked-weighted value factor, VAL, ALL OTHER, AA
- original name of "MOM^AA"
+ original name of "VAL^AA"
  \item \strong{MOMFactorAA} Rank-weighted momentum factor, MOM, ALL OTHER, AA
- original name of "VAL^US"
+ original name of "MOM^AA"
  \item \strong{VALFactorUS:} Excess returns of a ranked-weighted value factor, VAL, US EQUITIES, US
- original name of "MOM^US"
+ original name of "VAL^US"
  \item \strong{MOMFactorUS:} Rank-weighted momentum factor, MOM, US EQUITIES, US
- original name of "VAL^UK"
+ original name of "MOM^US"
  \item \strong{VALFactorUK:} Excess returns of a ranked-weighted value factor, VAL, UK EQUITIES, UK
- original name of "MOM^UK"
+ original name of "VAL^UK"
  \item \strong{MOMFactorUK:} Rank-weighted momentum factor, MOM, UK EQUITIES, UK
- original name of "VAL^EU"
+ original name of "MOM^UK"
  \item \strong{VALFactorEU:} Excess returns of a ranked-weighted value factor, VAL, EUROPE EQUITIES, EU
- original name of "MOM^EU"
+ original name of "VAL^EU"
  \item \strong{MOMFactorEU:} Rank-weighted momentum factor, MOM, EUROPE EQUITIES, EU
- original name of "VAL^JP"
+ original name of "MOM^EU"
  \item \strong{VALFactorJP:} Excess returns of a ranked-weighted value factor, VAL, JAPAN EQUITIES, JP
- original name of "MOM^JP"
+ original name of "VAL^JP"
  \item \strong{MOMFactorJP:} Rank-weighted momentum factor, MOM, JAPAN EQUITIES, JP
- original name of "VAL^EQ"
+ original name of "MOM^JP"
  \item \strong{VALFactorEQ:} Excess returns of a ranked-weighted value factor, VAL, EQUITY INDICES, EQ
- original name of "MOM^EQ"
+ original name of "VAL^EQ"
  \item \strong{MOMFactorEQ:} Rank-weighted momentum factor, MOM, EQUITY EQUITIES, EQ
- original name of "VAL^FX"
+ original name of "MOM^EQ"
  \item \strong{VALFactorFX:} Excess returns of a ranked-weighted value factor, VAL, CURRENCIES, FX
- original name of "MOM^FX"
+ original name of "VAL^FX"
  \item \strong{MOMFactorFX:} Rank-weighted momentum factor, MOM, CURRENCIES, FX
- original name of "VAL^FI"
+ original name of "MOM^FX"
  \item \strong{VALFactorFI:} Excess returns of a ranked-weighted value factor, VAL, FIXED INCOME, FI
- original name of "MOM^FI"
+ original name of "VAL^FI"
  \item \strong{MOMFactorFI:} Rank-weighted momentum factor, MOM, FIXED INCOME, FI
- original name of "VAL^CM"
+ original name of "MOM^FI"
  \item \strong{VALFactorCM:} Excess returns of a ranked-weighted value factor, VAL, COMMODITIES, CM
- original name of "MOM^CM"
+ original name of "VAL^CM"
  \item \strong{MOMFactorCM:} Rank-weighted momentum factor, MOM, COMMODITIES, CM
+ original name of "MOM^CM"
 }
 }
 \source{

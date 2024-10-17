@@ -31,46 +31,48 @@
 #' @format An xts object on Jan 1972 / Jul 2011 containing: Data: 475 entries, 22 total columns
 #' \itemize{
 #'  \item \strong{Date:} Date, monthly periodicity. Formatted in as a Date object in %m/%d/%Y format.
-#'  \item \strong{VAL:} Excess returns of a ranked-weighted value portfolio 
-#'  \item \strong{MOM:} Rank-weighted momentum portfolio 
-#'  
+#'  \item \strong{VAL:} Excess returns of a ranked-weighted value portfolio, EVERYWHERE
+#'  \item \strong{MOM:} Rank-weighted momentum portfolio, EVERYWHERE 
+#'  \item \strong{VAL.Port.SS:} Rank-weighted momentum portfolio, MOM, ALL EQUITIES, SS
+#'  original name of "VAL^SS"
 #'  \item \strong{MOM.Port.SS:} Rank-weighted momentum portfolio, MOM, ALL EQUITIES, SS
+#'  original name of "MOM^SS"
+#'  \item \strong{VAL.Port.AA:} Excess returns of a ranked-weighted value portfolio, VAL, ALL OTHER, AA
 #'  original name of "VAL^AA"
-#'  \item \strong{VAL.Por.AA:} Excess returns of a ranked-weighted value portfolio, VAL, ALL OTHER, AA
-#'  original name of "MOM^AA"
 #'  \item \strong{MOM.Port.AA} Rank-weighted momentum portfolio, MOM, ALL OTHER, AA
-#'  original name of "VAL^US"
+#'  original name of "MOM^AA"
 #'  \item \strong{VAL.Port.US:} Excess returns of a ranked-weighted value portfolio, VAL, US EQUITIES, US
-#'  original name of "MOM^US"
+#'  original name of "VAL^US"
 #'  \item \strong{MOM.Port.US:} Rank-weighted momentum portfolio, MOM, US EQUITIES, US
-#'  original name of "VAL^UK"
+#'  original name of "MOM^US"
 #'  \item \strong{VAL.Port.UK:} Excess returns of a ranked-weighted value portfolio, VAL, UK EQUITIES, UK
-#'  original name of "MOM^UK"
+#'  original name of "VAL^UK"
 #'  \item \strong{MOM.Port.UK:} Rank-weighted momentum portfolio, MOM, UK EQUITIES, UK
-#'  original name of "VAL^EU"
+#'  original name of "MOM^UK"
 #'  \item \strong{VAL.Port.EU:} Excess returns of a ranked-weighted value portfolio, VAL, EUROPE EQUITIES, EU
-#'  original name of "MOM^EU"
+#'  original name of "VAL^EU"
 #'  \item \strong{MOM.Port.EU:} Rank-weighted momentum portfolio, MOM, EUROPE EQUITIES, EU
-#'  original name of "VAL^JP"
+#'  original name of "MOM^EU"
 #'  \item \strong{VAL.Port.JP:} Excess returns of a ranked-weighted value portfolio, VAL, JAPAN EQUITIES, JP
-#'  original name of "MOM^JP"
+#'  original name of "VAL^JP"
 #'  \item \strong{MOM.Port.JP:} Rank-weighted momentum portfolio, MOM, JAPAN EQUITIES, JP
-#'  original name of "VAL^EQ"
+#'  original name of "MOM^JP"
 #'  \item \strong{VAL.Port.EQ:} Excess returns of a ranked-weighted value portfolio, VAL, EQUITY INDICES, EQ
-#'  original name of "MOM^EQ"
+#'  original name of "VAL^EQ"
 #'  \item \strong{MOM.Port.EQ:} Rank-weighted momentum portfolio, MOM, EQUITY EQUITIES, EQ
-#'  original name of "VAL^FX"
+#'  original name of "MOM^EQ"
 #'  \item \strong{VAL.Port.FX:} Excess returns of a ranked-weighted value portfolio, VAL, CURRENCIES, FX
-#'  original name of "MOM^FX"
+#'  original name of "VAL^FX"
 #'  \item \strong{MOM.Port.FX:} Rank-weighted momentum portfolio, MOM, CURRENCIES, FX
-#'  original name of "VAL^FI"
+#'  original name of "MOM^FX"
 #'  \item \strong{VAL.Port.FI:} Excess returns of a ranked-weighted value portfolio, VAL, FIXED INCOME, FI
-#'  original name of "MOM^FI"
+#'  original name of "VAL^FI"
 #'  \item \strong{MOM.Port.FI:} Rank-weighted momentum portfolio, MOM, FIXED INCOME, FI
-#'  original name of "VAL^CM"
+#'  original name of "MOM^FI"
 #'  \item \strong{VAL.Port.CM:} Excess returns of a ranked-weighted value portfolio, VAL, COMMODITIES, CM
-#'  original name of "MOM^CM"
+#'  original name of "VAL^CM"
 #'  \item \strong{MOM.Port.CM:} Rank-weighted momentum portfolio, MOM, COMMODITIES, CM
+#'  original name of "MOM^CM"
 #' }
 #' @source
 #'
